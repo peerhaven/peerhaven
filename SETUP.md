@@ -16,15 +16,14 @@ Our web UI is mainly tested with [Firefox](https://www.mozilla.org/en-US/firefox
 
 ### Atom
 
-For writing, we use [Atom](https://flight-manual.atom.io/getting-started/sections/why-atom/).
-Recommended packages are:
+For writing, we use [Atom](https://flight-manual.atom.io/getting-started/sections/why-atom/), along with the following packages:
 
 - [Atom IDE](https://ide.atom.io/)
-- [linter-js-standard](https://atom.io/packages/linter-js-standard), with _semistandard_ style selected
+- [linter-js-standard](https://atom.io/packages/linter-js-standard), with _semistandard_ style selected, according to our code style requirements
 - [Minimap](https://atom.io/packages/minimap) with [git-diff plugin](https://atom.io/packages/minimap-git-diff)
 - [Teletype](https://teletype.atom.io/)
 
-[Ubuntu Mono](https://fonts.google.com/specimen/Ubuntu+Mono) is a nice coding font.
+If you're looking for a nice coding font, you may want to check out [Ubuntu Mono](https://fonts.google.com/specimen/Ubuntu+Mono).
 
 ### Git
 
