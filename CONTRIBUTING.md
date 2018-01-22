@@ -22,6 +22,7 @@ Some things to think about:
   If you found an existing issue, vote or comment to raise awareness and show your interest.
 - If submitting a bug report, please provide the steps to reproduce the problem.
   Describe what's the expected and the actual behaviour.
+- Suggestions concerning our workflow, tools and standards are welcome!
 
 ## Code style
 
