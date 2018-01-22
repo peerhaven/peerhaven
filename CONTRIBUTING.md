@@ -34,6 +34,7 @@ Some things to think about:
 Please submit an issue with your suggestion, especially if you're not part of the core team, before starting to work on code.
 Let's make sure your changes are actually in line with what peerhaven is trying to achieve.
 Also, check open pull requests.
+If your contribution profited from being documented, please extend the documentation in parallel.
 
 We're using the [git flow](http://nvie.com/posts/a-successful-git-branching-model/) development model introduced by Vincent Driessen in 2010.
 
