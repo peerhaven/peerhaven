@@ -6,7 +6,11 @@ peerhaven is going to be a place for you to save and share your bookmarks; we're
 
 ## Contributing
 
-See our guide for [contributors](CONTRIBUTING.md).
+See our [guide for contributors](CONTRIBUTING.md).
+
+## Colophon
+
+See our [colophon](COLOPHON.md).
 
 ## License
 
