@@ -20,11 +20,24 @@ To access the GitHub repositories via SSH, remember to additionally point to the
 
 `git remote set-url origin git@github.com:peerhaven/peerhaven.git`
 
-In SmartGit, you can add your GPG signing key in the repository settings; as GPG program you write `/usr/bin/gpg2`.
-
 Also, please provide your full name in commits.
-Set your name:
+Set your name and e-mail address:
 
 - In [GitHub](https://github.com/settings/profile)
-- In [Git](https://help.github.com/articles/setting-your-username-in-git/)
-- If your using SmartGit, the name can be set in the repository settings
+- If your using SmartGit or Sourcetree, these can be set in the repository settings
+
+You can specify your name, e-mail address and GPG settings all in the terminal.
+Omit the `--global` option if you prefer per-repository settings:
+
+```bash
+git config --global user.name "Mona Lisa"
+git config --global user.email "email@example.com"
+
+# replace following key ID with output from: gpg2 --list-secret-keys
+git config --global user.signingkey <key ID>
+git config --global gpg.program /usr/local/bin/gpg2 # check correct path
+git config --global commit.gpgsign true
+```
+
+In SmartGit, you can add your GPG signing key in the repository settings; as GPG program you write `/usr/bin/gpg2`.
+In Sourcetree, the GPG key can also be set in the repository settings; you can specify the GPG directory in `Preferences > Advanced`, like `/usr/local/bin`.
