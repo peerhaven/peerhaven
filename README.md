@@ -1,3 +1,7 @@
+<div style="text-align: center;">
+  <img alt="peerhaven logo" src="img/ph-circle-green-white-100.png" />
+</div>
+
 # peerhaven
 
 ![Contributions welcome](img/contributions-welcome.svg)
