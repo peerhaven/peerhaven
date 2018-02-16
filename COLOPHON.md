@@ -11,6 +11,12 @@ This is the place where we would like to give credit.
 
 - Raster graphics with [PNG](https://en.wikipedia.org/wiki/Portable_Network_Graphics)
 
+## Development
+
+- Server-side scripting with [Node.js](https://nodejs.org/en/)
+- Node version managament with [nvm](https://github.com/creationix/nvm)
+- Node package management with [npm](https://www.npmjs.com/) and [Yarn](https://yarnpkg.com/en/)
+
 ## Fonts
 
 - Logo with _[Comfortaa](https://fonts.google.com/specimen/Comfortaa)_ (font by [Johan Aakerlund](https://aajohan.deviantart.com/))
@@ -23,8 +29,9 @@ This is the place where we would like to give credit.
 
 ## Software
 
-- We work with [elementary](https://elementary.io/) and [macOS](https://developer.apple.com/macos/)
+- Operating with [elementary](https://elementary.io/) and [macOS](https://developer.apple.com/macos/)
 - Web UI testing with [Firefox](https://www.mozilla.org/en-US/firefox/) and [Chrome](https://www.google.com/chrome/browser/desktop/index.html)
+- Terminal emulation with [bash](https://www.gnu.org/software/bash/)
 - Version control with [Git](https://git-scm.com/), along with GUI clients [SmartGit](https://www.syntevo.com/smartgit/) and [Sourcetree](https://www.sourcetreeapp.com/)
 - Text editing with [Atom](https://flight-manual.atom.io/getting-started/sections/why-atom/), along with the following packages:
   - [Atom IDE](https://ide.atom.io/)

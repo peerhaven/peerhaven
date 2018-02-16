@@ -41,3 +41,9 @@ git config --global commit.gpgsign true
 
 In SmartGit, you can add your GPG signing key in the repository settings; as GPG program you write `/usr/bin/gpg2`.
 In Sourcetree, the GPG key can also be set in the repository settings; you can specify the GPG directory in `Preferences > Advanced`, like `/usr/local/bin`.
+
+## Node.js
+
+If you install Node with the official download, you may get into permission issues.
+Instead, it is recommended to install Node with the latest version of [nvm](https://github.com/creationix/nvm#installation); this will also install npm.
+[Install Yarn](https://yarnpkg.com/en/docs/install) on top.
