@@ -1,10 +1,8 @@
-<div style="text-align: center;">
-  <img alt="peerhaven logo" src="img/ph-circle-green-white-100.png" />
-</div>
+[![peerhaven logo](img/ph-circle-green-white-100.png)](https://peerhaven.net/)
 
 # peerhaven
 
-![Contributions welcome](img/contributions-welcome.svg)
+[![Contributions welcome](img/contributions-welcome.svg)](CONTRIBUTING.md)
 
 peerhaven is going to be a place for you to save and share your bookmarks; we're not there, yet.
 
