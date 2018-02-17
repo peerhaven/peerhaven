@@ -23,6 +23,7 @@ If you haven't done this kind of thing before, check out this free Egghead video
   - [Subject](#subject)
   - [Body](#body)
   - [Footer](#footer)
+  - [tl;dr](#tldr)
 
 ## Getting started
 
@@ -130,8 +131,10 @@ Must be one of the following:
 - `fix`: A bug fix
 - `perf`: A code change that improves performance
 - `refactor`: A code change that neither fixes a bug nor adds a feature
+- `revert`: Revert to a commit
 - `style`: Changes that do not affect the meaning of the code (white-space, formatting, missing semi-colons, etc.)
 - `test`: Adding missing tests or correcting existing tests
+- `wip`: Work in progress
 
 ### Scope
 
@@ -149,10 +152,23 @@ The `subject` contains a summary of the change:
 
 Just as in the `subject`, use the imperative, present tense.
 The `body` may include the motivation for the change and contrast this with previous behavior.
+Use multiple lines if needed.
 
 ### Footer
 
-The `footer` should contain any information about breaking changes and is also the place to [reference GitHub issues](https://help.github.com/articles/closing-issues-via-commit-messages/).
+The `footer` should contain any information about breaking changes and is also the place to [reference GitHub issues](https://help.github.com/articles/closing-issues-using-keywords/).
 
 Breaking changes should start with the expression `BREAKING CHANGE:`.
 The rest of the commit message is then used for this and may span multiple lines.
+
+### tl;dr
+
+To help you play by our rules, we set up [Commitizen](http://commitizen.github.io/cz-cli/).
+Once you're ready to commit, just run:
+
+```bash
+yarn run cz
+```
+
+_Commitizen_ will ask you several questions and generate a valid commit message for you.
+Still, it helps if you have read our guideline at least once.

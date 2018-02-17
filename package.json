@@ -1,0 +1,23 @@
+{
+  "config": {
+    "commitizen": {
+      "path": "cz-customizable"
+    },
+    "cz-customizable": {
+      "config": ".cz-config.js"
+    }
+  },
+  "devDependencies": {
+    "commitizen": "^2.9.6",
+    "cz-customizable": "^5.2.0"
+  },
+  "name": "peerhaven-main",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/peerhaven/peerhaven.git"
+  },
+  "scripts": {
+    "cz": "git add . && git-cz"
+  },
+  "version": "1.0.0"
+}

@@ -3,6 +3,13 @@
 This is a beginner friendly guide for setting up everything necessary to work on peerhaven.
 If parts of this guide don't work for your system, let us know by [submitting an issue](CONTRIBUTING.md#submitting-issues)!
 
+## Contents
+
+- [Languages](#languages)
+- [Git](#git)
+- [Node.js](#nodejs)
+  - [Yarn](#yarn)
+
 ## Languages
 
 You should be familiar with:
@@ -47,3 +54,11 @@ In Sourcetree, the GPG key can also be set in the repository settings; you can s
 If you install Node with the official download, you may get into permission issues.
 Instead, it is recommended to install Node with the latest version of [nvm](https://github.com/creationix/nvm#installation); this will also install npm.
 [Install Yarn](https://yarnpkg.com/en/docs/install) on top.
+
+### Yarn
+
+Install all dependencies:
+
+```bash
+yarn install
+```
