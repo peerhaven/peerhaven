@@ -6,6 +6,24 @@ This document describes how you can take part in improving peerhaven.
 
 If you haven't done this kind of thing before, check out this free Egghead video course about [how to contribute to an open source project on GitHub](https://egghead.io/courses/how-to-contribute-to-an-open-source-project-on-github).
 
+## Contents
+
+- [Getting started](#getting-started)
+- [Submitting issues](#submitting-issues)
+- [Code style](#code-style)
+- [Integrating changes](#integrating-changes)
+  - [APIs](#apis)
+  - [Clients](#clients)
+  - [Documentation](#documentation)
+- [Commit message guideline](#commit-message-guideline)
+  - [Format](#format)
+  - [Revert](#revert)
+  - [Type](#type)
+  - [Scope](#scope)
+  - [Subject](#subject)
+  - [Body](#body)
+  - [Footer](#footer)
+
 ## Getting started
 
 We prepared a separate document for [setting up the environment](SETUP.md).
@@ -67,3 +85,74 @@ That's the only difference compared to repositories containing APIs.
 Repositories without code, like this one, have a drastically simplified workflow.
 They have no versions and only `master` has an infinite lifetime.
 Commits go into temporary `content` branches, like `content/add-code-of-conduct`, and are merged into `master` by pull requests.
+
+## Commit message guideline
+
+We have rules over how our Git commit messages should be formatted.
+This leads to a more readable commit log that is easy to follow when looking through the project history.
+
+Based on the [guideline by Angular](https://github.com/angular/angular/blob/master/CONTRIBUTING.md#commit).
+
+### Format
+
+Each commit message consists of a `header`, a `body` and a `footer`.
+The `header` has a special format that includes a `type`, a `scope` and a `subject`:
+
+```
+<type>(<scope>): <subject>
+<BLANK LINE>
+<body>
+<BLANK LINE>
+<footer>
+```
+
+The `header` is mandatory; the `body` and `footer`, and the `scope` of the `header` are optional.
+
+Any line of the commit message should not be longer than 80 characters!
+This allows the message to be easier to read on GitHub as well as in various Git tools.
+
+Check our [commit log](https://github.com/peerhaven/peerhaven/commits/master) for examples.
+
+### Revert
+
+If the commit reverts a previous commit, it should begin with `revert:`, followed by the `header` of the reverted commit.
+In the `body` it should say: `This reverts commit <hash>.`, where the hash is the SHA of the commit being reverted.
+
+### Type
+
+Must be one of the following:
+
+- `build`: Changes that affect the build system or external dependencies
+- `chore`: Maintenance (e.g. merging)
+- `ci`: Changes to CI configuration files and scripts
+- `docs`: Documentation only changes
+- `feat`: Adding (to) a feature
+- `fix`: A bug fix
+- `perf`: A code change that improves performance
+- `refactor`: A code change that neither fixes a bug nor adds a feature
+- `style`: Changes that do not affect the meaning of the code (white-space, formatting, missing semi-colons, etc.)
+- `test`: Adding missing tests or correcting existing tests
+
+### Scope
+
+Possible scopes unclear for now.
+
+### Subject
+
+The `subject` contains a summary of the change:
+
+- Use the imperative, present tense: `change`, not `changed` or `changes`.
+- Don't capitalize the first letter.
+- No dot at the end.
+
+### Body
+
+Just as in the `subject`, use the imperative, present tense.
+The `body` may include the motivation for the change and contrast this with previous behavior.
+
+### Footer
+
+The `footer` should contain any information about breaking changes and is also the place to [reference GitHub issues](https://help.github.com/articles/closing-issues-via-commit-messages/).
+
+Breaking changes should start with the expression `BREAKING CHANGE:`.
+The rest of the commit message is then used for this and may span multiple lines.
