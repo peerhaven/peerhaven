@@ -4,7 +4,10 @@ We develop peerhaven in the open because we want to be a transparent platform an
 Community contributions are helpful and very welcome.
 This document describes how you can take part in improving peerhaven.
 
-If you haven't done this kind of thing before, check out this free Egghead video course about [how to contribute to an open source project on GitHub](https://egghead.io/courses/how-to-contribute-to-an-open-source-project-on-github).
+If you haven't done this kind of thing before, read GitHub's guide about [how to contribute to open source](https://opensource.guide/how-to-contribute/) in general (for a non-technical overview), and then check out the free Egghead video course about [how to contribute to an open source project on GitHub](https://egghead.io/courses/how-to-contribute-to-an-open-source-project-on-github) (for a more technical introduction).
+
+Please note that this project is released with a [contributor code of conduct](CODE_OF_CONDUCT.md).
+By participating in this project you agree to abide by its terms.
 
 ## Contents
 

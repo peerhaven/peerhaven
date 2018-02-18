@@ -3,6 +3,18 @@
 peerhaven could not be possible without the work it is based on.
 This is the place where we would like to give credit.
 
+## Contents
+
+- [Artworks](#artworks)
+- [Binary file formats](#binary-file-formats)
+- [Community](#community)
+- [Development](#development)
+  - [Node packages](#node-packages)
+- [Fonts](#fonts)
+- [Languages](#languages)
+- [Software](#software)
+- [Web](#web)
+
 ## Artworks
 
 - Logo created by [Andrej Stieben](https://github.com/stieben) and [Sara Pstrowska](https://github.com/p-sara) in [Adobe Flash](https://en.wikipedia.org/wiki/Adobe_Flash)
@@ -10,6 +22,10 @@ This is the place where we would like to give credit.
 ## Binary file formats
 
 - Raster graphics with [PNG](https://en.wikipedia.org/wiki/Portable_Network_Graphics)
+
+## Community
+
+- Code of conduct adapted from [Contributor Covenant](https://www.contributor-covenant.org/)
 
 ## Development
 
@@ -20,6 +36,7 @@ This is the place where we would like to give credit.
 ### Node packages
 
 - Commit message conventions with [Commitizen](http://commitizen.github.io/cz-cli/) and [cz-customizable](https://github.com/leonardoanalista/cz-customizable) adapter
+- Code of conduct generation with [Covenant Generator](https://github.com/simonv3/covenant-generator)
 
 ## Fonts
 

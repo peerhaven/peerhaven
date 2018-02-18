@@ -12,11 +12,15 @@
     "cz-customizable": "^5.2.0"
   },
   "name": "peerhaven-main",
+  "optionalDependencies": {
+    "covgen": "^3.0.2"
+  },
   "repository": {
     "type": "git",
     "url": "https://github.com/peerhaven/peerhaven.git"
   },
   "scripts": {
+    "covgen": "covgen",
     "cz": "git add . && git-cz"
   },
   "version": "1.0.0"
