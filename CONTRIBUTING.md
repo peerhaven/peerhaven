@@ -50,6 +50,7 @@ Some things to think about:
 
 - **JavaScript**  
   We use [semistandard](https://github.com/Flet/semistandard) which is based on [standard](https://github.com/standard/standard/blob/master/docs/RULES-en.md) and adds semicolons to the rules.
+  Whenever you commit with `yarn run cz` this style is automatically applied, but you can also check your JavaScript files manually with `yarn run js-lint`.
 
 ## Integrating changes
 

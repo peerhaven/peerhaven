@@ -17,17 +17,53 @@ module.exports = {
   },
 
   types: [
-    {value: 'build',    name: 'build:    Changes that affect the build system or external dependencies'},
-    {value: 'chore',    name: 'chore:    Maintenance (e.g. merging)'},
-    {value: 'ci',       name: 'ci:       Changes to CI configuration files and scripts'},
-    {value: 'docs',     name: 'docs:     Documentation only changes'},
-    {value: 'feat',     name: 'feat:     Adding (to) a feature'},
-    {value: 'fix',      name: 'fix:      A bug fix'},
-    {value: 'perf',     name: 'perf:     A code change that improves performance'},
-    {value: 'refactor', name: 'refactor: A code change that neither fixes a bug nor adds a feature'},
-    {value: 'revert',   name: 'revert:   Revert to a commit'},
-    {value: 'style',    name: 'style:    Changes that do not affect the meaning of the code'},
-    {value: 'test',     name: 'test:     Adding missing tests or correcting existing tests'},
-    {value: 'wip',      name: 'wip:      Work in progress'}
+    {
+      name: 'build:    Changes that affect the build system or external dependencies',
+      value: 'build'
+    },
+    {
+      name: 'chore:    Maintenance (e.g. merging)',
+      value: 'chore'
+    },
+    {
+      name: 'ci:       Changes to CI configuration files and scripts',
+      value: 'ci'
+    },
+    {
+      name: 'docs:     Documentation only changes',
+      value: 'docs'
+    },
+    {
+      name: 'feat:     Adding (to) a feature',
+      value: 'feat'
+    },
+    {
+      name: 'fix:      A bug fix',
+      value: 'fix'
+    },
+    {
+      name: 'perf:     A code change that improves performance',
+      value: 'perf'
+    },
+    {
+      name: 'refactor: A code change that neither fixes a bug nor adds a feature',
+      value: 'refactor'
+    },
+    {
+      name: 'revert:   Revert to a commit',
+      value: 'revert'
+    },
+    {
+      name: 'style:    Changes that do not affect the meaning of the code',
+      value: 'style'
+    },
+    {
+      name: 'test:     Adding missing tests or correcting existing tests',
+      value: 'test'
+    },
+    {
+      name: 'wip:      Work in progress',
+      value: 'wip'
+    }
   ]
 };
