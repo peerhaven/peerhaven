@@ -39,6 +39,10 @@ This is the place where we would like to give credit.
 - Code of conduct generation with [Covenant Generator](https://github.com/simonv3/covenant-generator)
 - JavaScript linting with [semistandard](https://github.com/Flet/semistandard), and [snazzy](https://github.com/standard/snazzy) for prettier output
 
+### Ruby gems
+
+- Markdown linting with [mdl](https://github.com/markdownlint/markdownlint)
+
 ## Fonts
 
 - Logo with _[Comfortaa](https://fonts.google.com/specimen/Comfortaa)_ (font by [Johan Aakerlund](https://aajohan.deviantart.com/))
@@ -46,7 +50,7 @@ This is the place where we would like to give credit.
 
 ## Languages
 
-- Development with [JavaScript](https://en.wikipedia.org/wiki/JavaScript)
+- Development with [JavaScript](https://en.wikipedia.org/wiki/JavaScript) and [Ruby](http://www.ruby-lang.org/)
 - Documentation with [Markdown](https://daringfireball.net/projects/markdown/)
 - Vector graphics with [SVG](https://en.wikipedia.org/wiki/Scalable_Vector_Graphics)
 

@@ -48,16 +48,22 @@ Some things to think about:
 
 ## Code style
 
+Whenever you commit with `yarn run cz` the styles are automatically checked (for Markdown) or even applied (for JavaScript), but you can also check your files manually.
+
 - **JavaScript**  
   We use [semistandard](https://github.com/Flet/semistandard) which is based on [standard](https://github.com/standard/standard/blob/master/docs/RULES-en.md) and adds semicolons to the rules.
-  Whenever you commit with `yarn run cz` this style is automatically applied, but you can also check your JavaScript files manually with `yarn run js-lint`.
+  Check manually with `yarn run js-lint`.
+
+- **Markdown**  
+  See separate document for [Markdown code style rules](codestyle/markdown.md).
+  Check manually with `mdl .` from project root directory.
 
 ## Integrating changes
 
 Please submit an issue with your suggestion, especially if you're not part of the core team, before starting to work on code.
 Let's make sure your changes are actually in line with what peerhaven is trying to achieve.
 Also, check open pull requests.
-If your contribution profited from being documented, please extend the documentation in parallel.
+Please keep code and documentation in sync and update the documentation in parallel.
 
 We're using the [git flow](http://nvie.com/posts/a-successful-git-branching-model/) development model introduced by Vincent Driessen in 2010.
 

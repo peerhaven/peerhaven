@@ -62,3 +62,13 @@ Install all dependencies:
 ```bash
 yarn install
 ```
+
+## Ruby
+
+Install Ruby via the recommended way of your OS.
+
+### Markdown lint tool
+
+```bash
+gem install mdl
+```
