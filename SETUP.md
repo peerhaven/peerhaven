@@ -9,6 +9,8 @@ If parts of this guide don't work for your system, let us know by [submitting an
 - [Git](#git)
 - [Node.js](#nodejs)
   - [Yarn](#yarn)
+- [Ruby](#ruby)
+  - [Gems](#gems)
 
 ## Languages
 
@@ -67,7 +69,7 @@ yarn install
 
 Install Ruby via the recommended way of your OS.
 
-### Markdown lint tool
+### Gems
 
 ```bash
 gem install mdl
