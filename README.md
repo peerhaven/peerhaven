@@ -8,6 +8,10 @@
 
 peerhaven is going to be a place for you to save and share your bookmarks; we're not there, yet.
 
+Our architecture is rather modular, with the different parts being separated across repositories:
+
+- [**web**](https://github.com/peerhaven/web): Web app core
+
 ## Contributing
 
 See our [guide for contributors](CONTRIBUTING.md).
