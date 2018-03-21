@@ -10,6 +10,7 @@ This is the place where we would like to give credit.
 - [Community](#community)
 - [Development](#development)
   - [Node packages](#node-packages)
+  - [Ruby gems](#ruby-gems)
 - [Fonts](#fonts)
 - [Languages](#languages)
 - [Software](#software)
