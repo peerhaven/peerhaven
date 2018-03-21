@@ -1,0 +1,30 @@
+{
+  "config": {
+    "commitizen": {
+      "path": "cz-customizable"
+    },
+    "cz-customizable": {
+      "config": ".cz-config.js"
+    }
+  },
+  "devDependencies": {
+    "commitizen": "^2.9.6",
+    "cz-customizable": "^5.2.0",
+    "semistandard": "^12.0.0",
+    "snazzy": "^7.0.0"
+  },
+  "name": "@peerhaven/peerhaven",
+  "optionalDependencies": {
+    "covgen": "^3.0.2"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/peerhaven/peerhaven.git"
+  },
+  "scripts": {
+    "covgen": "covgen",
+    "cz": "semistandard --fix && git add . && mdl . && git-cz",
+    "js-lint": "semistandard --verbose | snazzy"
+  },
+  "version": "1.0.0"
+}

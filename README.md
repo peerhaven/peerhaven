@@ -1,10 +1,20 @@
+[![peerhaven logo](img/ph-circle-green-white-100.png)](https://peerhaven.net/)
+
 # peerhaven
+
+[![Contributions welcome](img/contributions-welcome.svg)](CONTRIBUTING.md)
+[![Commitizen friendly](img/commitizen-friendly.svg)](http://commitizen.github.io/cz-cli/)
+[![Code style: semistandard](img/code-style-semistandard.svg)](https://github.com/Flet/semistandard)
 
 peerhaven is going to be a place for you to save and share your bookmarks; we're not there, yet.
 
 ## Contributing
 
-See our guide for [contributors](CONTRIBUTING.md).
+See our [guide for contributors](CONTRIBUTING.md).
+
+## Colophon
+
+See our [colophon](COLOPHON.md).
 
 ## License
 
