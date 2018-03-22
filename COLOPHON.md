@@ -9,6 +9,7 @@ This is the place where we would like to give credit.
 - [Binary file formats](#binary-file-formats)
 - [Community](#community)
 - [Development](#development)
+  - [Front-end](#front-end)
   - [Node packages](#node-packages)
   - [Ruby gems](#ruby-gems)
 - [Fonts](#fonts)
@@ -34,11 +35,16 @@ This is the place where we would like to give credit.
 - Node version managament with [nvm](https://github.com/creationix/nvm)
 - Node package management with [npm](https://www.npmjs.com/) and [Yarn](https://yarnpkg.com/en/)
 
+### Front-end
+
+- UI JavaScript framework by [Vue.js](https://vuejs.org/)
+
 ### Node packages
 
 - Commit message conventions with [Commitizen](http://commitizen.github.io/cz-cli/) and [cz-customizable](https://github.com/leonardoanalista/cz-customizable) adapter
 - Code of conduct generation with [Covenant Generator](https://github.com/simonv3/covenant-generator)
 - JavaScript linting with [semistandard](https://github.com/Flet/semistandard), and [snazzy](https://github.com/standard/snazzy) for prettier output
+- Server-side rendering with [Nuxt.js](https://nuxtjs.org/)
 
 ### Ruby gems
 
@@ -53,6 +59,7 @@ This is the place where we would like to give credit.
 
 - Development with [JavaScript](https://en.wikipedia.org/wiki/JavaScript) and [Ruby](http://www.ruby-lang.org/)
 - Documentation with [Markdown](https://daringfireball.net/projects/markdown/)
+- Markup with [HTML](https://en.wikipedia.org/wiki/HTML)
 - Vector graphics with [SVG](https://en.wikipedia.org/wiki/Scalable_Vector_Graphics)
 
 ## Software
