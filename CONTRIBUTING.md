@@ -71,10 +71,13 @@ Please note that anybody with _write_ permission is supposed to push only to tem
 To avoid [unverified merge commits](https://github.com/peerhaven/peerhaven/commit/60f1f6f6e2fc804d6761454fe6d8e79916c74802) (which happen if you merge via the GitHub web app), merge via the command line:
 
 ```bash
-git checkout master
-git merge --no-ff <branch name> -m "chore: merge pull request #<no.> from <branch name>"
+git checkout master # or develop
+git merge --no-ff <temporary branch name>
+# chore: merge pull request #<no.> from <temporary branch name>
 git push
 ```
+
+Then delete the temporary branch both locally and on GitHub.
 
 Temporary branches have hierarchical names; examples are:
 
