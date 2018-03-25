@@ -1,4 +1,4 @@
-[![peerhaven logo](img/ph-circle-green-white-100.png)](https://peerhaven.net/)
+[![peerhaven logo](img/ph-circle-white-green-transparent-100.png)](https://peerhaven.net/)
 
 # peerhaven
 

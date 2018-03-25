@@ -24,6 +24,7 @@ This is the place where we would like to give credit.
 ## Binary file formats
 
 - Raster graphics with [PNG](https://en.wikipedia.org/wiki/Portable_Network_Graphics)
+- Web browser favicon with [ICO](https://en.wikipedia.org/wiki/ICO)
 
 ## Community
 
@@ -32,12 +33,13 @@ This is the place where we would like to give credit.
 ## Development
 
 - Server-side scripting with [Node.js](https://nodejs.org/en/)
-- Node version managament with [nvm](https://github.com/creationix/nvm)
+- Node version management with [nvm](https://github.com/creationix/nvm)
 - Node package management with [npm](https://www.npmjs.com/) and [Yarn](https://yarnpkg.com/en/)
 
 ### Front-end
 
-- UI JavaScript framework by [Vue.js](https://vuejs.org/)
+- UI JavaScript framework by [Vue.js](https://vuejs.org/), with the following plugins:
+  - Meta data management with [vue-meta](https://github.com/declandewet/vue-meta)
 
 ### Node packages
 
@@ -59,7 +61,7 @@ This is the place where we would like to give credit.
 
 - Development with [JavaScript](https://en.wikipedia.org/wiki/JavaScript) and [Ruby](http://www.ruby-lang.org/)
 - Documentation with [Markdown](https://daringfireball.net/projects/markdown/)
-- Markup with [HTML](https://en.wikipedia.org/wiki/HTML)
+- Markup with [HTML](https://en.wikipedia.org/wiki/HTML) and [XML](https://en.wikipedia.org/wiki/XML)
 - Vector graphics with [SVG](https://en.wikipedia.org/wiki/Scalable_Vector_Graphics)
 
 ## Software
@@ -78,6 +80,7 @@ This is the place where we would like to give credit.
 
 - Code hosting on [GitHub](https://github.com/)
 - Color palette by [Color Hunt](http://colorhunt.co/c/65068)
+- Favicon generated with [Real Favicon Generator](https://realfavicongenerator.net/)
 - Repository badges generated with [Shields.io](http://shields.io/):
   - _Contributions welcome_
   - _Commitizen friendly_
