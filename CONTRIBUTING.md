@@ -68,7 +68,7 @@ Please keep code and documentation in sync and update the documentation in paral
 We're using the [git flow](http://nvie.com/posts/a-successful-git-branching-model/) development model introduced by Vincent Driessen in 2010.
 
 Please note that anybody with _write_ permission is supposed to push only to temporary branches (`feature`, `release` and `hotfix`); changes to `develop` and `master` branches are merged by [pull requests](https://help.github.com/articles/about-pull-requests/) after code review.
-To avoid [unverified merge commits](https://github.com/peerhaven/peerhaven/commit/60f1f6f6e2fc804d6761454fe6d8e79916c74802) (which happen if you merge via the GitHub web app), merge via the command line:
+To avoid unverified merge commits (which happen if you merge via the GitHub web app) ([example](https://github.com/peerhaven/peerhaven/commit/60f1f6f6e2fc804d6761454fe6d8e79916c74802)), merge via the command line:
 
 ```bash
 git checkout master # or develop
