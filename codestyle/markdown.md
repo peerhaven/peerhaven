@@ -10,6 +10,7 @@ Check our existing Markdown documents to see how the style is applied in practic
   - [MD003](#md003) (header style)
   - [MD004](#md004) (unordered list style)
   - [MD009](#md009) (trailing spaces)
+  - [MD026](#md026) (trailing punctuation in header)
   - [MD035](#md035) (horizontal rule style)
 - [Custom rules](#custom-rules)
 
@@ -47,6 +48,10 @@ The following rules have been adapted.
 ### MD009
 
 **Trailing spaces**: 2 allowed (for line breaks)
+
+### MD026
+
+**Trailing punctuation in header**: `?` allowed
 
 ### MD035
 

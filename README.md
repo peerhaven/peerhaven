@@ -1,4 +1,4 @@
-[![peerhaven logo](img/ph-circle-green-white-100.png)](https://peerhaven.net/)
+[![peerhaven logo](img/ph-circle-white-green-transparent-100.png)](https://peerhaven.net/)
 
 # peerhaven
 
@@ -7,6 +7,10 @@
 [![Code style: semistandard](img/code-style-semistandard.svg)](https://github.com/Flet/semistandard)
 
 peerhaven is going to be a place for you to save and share your bookmarks; we're not there, yet.
+
+Our architecture is rather modular, with the different parts being separated across repositories:
+
+- [**web**](https://github.com/peerhaven/web): Web app core
 
 ## Contributing
 

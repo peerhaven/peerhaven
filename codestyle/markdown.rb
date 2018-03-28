@@ -10,4 +10,5 @@ exclude_rule 'MD041'
 rule 'MD003', :style => :atx
 rule 'MD004', :style => :dash
 rule 'MD009', :br_spaces => 2
+rule 'MD026', :punctuation => ".,;:!"
 rule 'MD035', :style => "---"

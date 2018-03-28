@@ -26,5 +26,5 @@
     "cz": "semistandard --fix && git add . && mdl . && git-cz",
     "js-lint": "semistandard --verbose | snazzy"
   },
-  "version": "1.0.0"
+  "version": "1.0.1"
 }
