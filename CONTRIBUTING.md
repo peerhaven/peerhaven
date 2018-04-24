@@ -11,8 +11,9 @@ By participating in this project you agree to abide by its terms.
 
 ## Contents
 
-- [Getting started](#getting-started)
 - [Submitting issues](#submitting-issues)
+- [Languages](#languages)
+- [Git setup](#git-setup)
 - [Code style](#code-style)
 - [Integrating changes](#integrating-changes)
   - [APIs](#apis)
@@ -28,10 +29,6 @@ By participating in this project you agree to abide by its terms.
   - [Footer](#footer)
   - [tl;dr](#tldr)
 
-## Getting started
-
-We prepared a separate document for [setting up the environment](SETUP.md).
-
 ## Submitting issues
 
 Please take your time opening an issue, to help us respond to it in the most efficient way possible.
@@ -45,6 +42,54 @@ Some things to think about:
 - If submitting a bug report, please provide the steps to reproduce the problem.
   Describe what's the expected and the actual behaviour.
 - Suggestions concerning our workflow, tools and standards are welcome!
+
+## Languages
+
+You should be familiar with:
+
+- [JavaScript](http://javascript.info/)
+- [Markdown](https://blog.ghost.org/markdown/)
+
+## Git setup
+
+Make sure you have a GitHub account and Git installed on your system.
+If you haven't already, download the respective repository:
+
+```bash
+git clone https://github.com/peerhaven/peerhaven.git
+```
+
+[Add SSH and GPG keys to your GitHub account](https://github.com/settings/keys).
+Please secure your SSH key with a passphrase; it is used for accessing GitHub.
+The GPG key is for signing your commits.
+
+To access the GitHub repositories via SSH, remember to additionally point to the origin via SSH:
+
+```bash
+git remote set-url origin git@github.com:peerhaven/peerhaven.git
+```
+
+Also, please provide your full name in commits.
+Set your name and e-mail address:
+
+- In [GitHub](https://github.com/settings/profile)
+- If your using SmartGit or Sourcetree, these can be set in the repository settings
+
+You can specify your name, e-mail address and GPG settings all in the terminal.
+Omit the `--global` option if you prefer per-repository settings:
+
+```bash
+git config --global user.name "Mona Lisa"
+git config --global user.email "email@example.com"
+
+# replace following key ID with output from: gpg2 --list-secret-keys
+git config --global user.signingkey <key ID>
+git config --global gpg.program /usr/local/bin/gpg2 # check correct path
+git config --global commit.gpgsign true
+```
+
+In SmartGit, you can add your GPG signing key in the repository settings; as GPG program you write `/usr/bin/gpg2`.
+In Sourcetree, the GPG key can also be set in the repository settings; you can specify the GPG directory in `Preferences > Advanced`, like `/usr/local/bin`.
 
 ## Code style
 
@@ -79,6 +124,9 @@ git push
 
 Then delete the temporary branch both locally and on GitHub.
 
+If you happen to have conflicts in a pull request, resolving those from the web app results in a verified merge commit but creates a commit message that doesn't comply with our guideline ([example](https://github.com/peerhaven/web/commit/445f6b9d65d4c53e92df10b74b29b0e9187401f9)).
+Therefore, merge `develop`/`master` into your temporary branch from within your Git client and resolve the conflicts there.
+
 Temporary branches have hierarchical names; examples are:
 
 - `feature/add-github-auth`
@@ -90,7 +138,7 @@ We are going to have 3 different types of repositories, resulting in 3 slightly 
 ### APIs
 
 Having a coherent codebase and being presumably ready to ship, a `release` branch is created from the `develop` branch, the version number following the principles of [semantic versioning 2.0.0](https://semver.org/).
-Until incorporating [feature flags](https://readwrite.com/2016/01/22/staging-servers/), the code in the newly created `release` branch is being tested internally in a staging environment, at least for a week.
+Until incorporating [feature flags](https://readwrite.com/2016/01/22/staging-servers/), the code in the newly created `release` branch is being tested internally in a staging environment, usually for a week.
 When code gets merged into `master`, we push the code into our production system.
 From this point on, a new `release` branch may be created.
 
@@ -98,7 +146,7 @@ From this point on, a new `release` branch may be created.
 
 [Semantic versioning doesn't make much sense for apps without a public API](https://grimoire.ca/dev/webapp-versions), like our web app.
 So releases are named by date instead:
-`release/2018-07-21`, or `release/2018-07-21a` when integrating hotfixes.
+`release/2018-07-21` (date of planned merge into master).
 That's the only difference compared to repositories containing APIs.
 
 ### Documentation

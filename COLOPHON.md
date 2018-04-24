@@ -14,11 +14,13 @@ This is the place where we would like to give credit.
   - [Ruby gems](#ruby-gems)
 - [Fonts](#fonts)
 - [Languages](#languages)
+- [Resources](#resources)
 - [Software](#software)
 - [Web](#web)
 
 ## Artworks
 
+- Icons by [Material Design Icons](https://materialdesignicons.com/)
 - Logo created by [Andrej Stieben](https://github.com/stieben) and [Sara Pstrowska](https://github.com/p-sara) in [Adobe Flash](https://en.wikipedia.org/wiki/Adobe_Flash)
 
 ## Binary file formats
@@ -33,20 +35,27 @@ This is the place where we would like to give credit.
 ## Development
 
 - Server-side scripting with [Node.js](https://nodejs.org/en/)
-- Node version management with [nvm](https://github.com/creationix/nvm)
-- Node package management with [npm](https://www.npmjs.com/) and [Yarn](https://yarnpkg.com/en/)
+  - Node package management with [npm](https://www.npmjs.com/) and [Yarn](https://yarnpkg.com/en/)
+  - Node version management with [nvm](https://github.com/creationix/nvm)
 
 ### Front-end
 
+- CSS framework by [Bulma](https://bulma.io/), with [Buefy](https://buefy.github.io/) UI components
 - UI JavaScript framework by [Vue.js](https://vuejs.org/), with the following plugins:
   - Meta data management with [vue-meta](https://github.com/declandewet/vue-meta)
 
 ### Node packages
 
-- Commit message conventions with [Commitizen](http://commitizen.github.io/cz-cli/) and [cz-customizable](https://github.com/leonardoanalista/cz-customizable) adapter
+- Bundling with [Webpack](https://webpack.js.org/), with the following plugins:
+  - [CSS Loader](https://github.com/webpack-contrib/css-loader)
+  - [Extract Text Plugin](https://github.com/webpack-contrib/extract-text-webpack-plugin)
+  - [Sass Loader](https://github.com/webpack-contrib/sass-loader)
+  - [Webpack Bundle Analyzer](https://github.com/webpack-contrib/webpack-bundle-analyzer)
 - Code of conduct generation with [Covenant Generator](https://github.com/simonv3/covenant-generator)
+- Commit message conventions with [Commitizen](http://commitizen.github.io/cz-cli/) and [cz-customizable](https://github.com/leonardoanalista/cz-customizable) adapter
 - JavaScript linting with [semistandard](https://github.com/Flet/semistandard), and [snazzy](https://github.com/standard/snazzy) for prettier output
 - Server-side rendering with [Nuxt.js](https://nuxtjs.org/)
+- Stylesheet preprocessing with [node-sass](https://github.com/sass/node-sass)
 
 ### Ruby gems
 
@@ -54,34 +63,45 @@ This is the place where we would like to give credit.
 
 ## Fonts
 
-- Logo with _[Comfortaa](https://fonts.google.com/specimen/Comfortaa)_ (font by [Johan Aakerlund](https://aajohan.deviantart.com/))
 - Coding with _[Ubuntu Mono](https://fonts.google.com/specimen/Ubuntu+Mono)_ (font by [Dalton Maag](http://www.daltonmaag.com/))
+- Logo with _[Comfortaa](https://fonts.google.com/specimen/Comfortaa)_ (font by [Johan Aakerlund](https://aajohan.deviantart.com/))
 
 ## Languages
 
 - Development with [JavaScript](https://en.wikipedia.org/wiki/JavaScript) and [Ruby](http://www.ruby-lang.org/)
 - Documentation with [Markdown](https://daringfireball.net/projects/markdown/)
 - Markup with [HTML](https://en.wikipedia.org/wiki/HTML) and [XML](https://en.wikipedia.org/wiki/XML)
+- Styling with [CSS](https://en.wikipedia.org/wiki/Cascading_Style_Sheets); preprocessing with [Sass](https://sass-lang.com/)
 - Vector graphics with [SVG](https://en.wikipedia.org/wiki/Scalable_Vector_Graphics)
+
+## Resources
+
+- [CSS-Tricks](https://css-tricks.com/)
+- [HEAD](https://gethead.info/), a guide to `<head>` elements
+- [Keep a Changelog](https://keepachangelog.com/en/1.0.0/)
+- [The Sass Way](http://thesassway.com/)
 
 ## Software
 
+- Internal team communication with [Keybase](https://keybase.io/)
 - Operating with [elementary](https://elementary.io/) and [macOS](https://developer.apple.com/macos/)
-- Web UI testing with [Firefox](https://www.mozilla.org/en-US/firefox/) and [Chrome](https://www.google.com/chrome/browser/desktop/index.html)
 - Terminal emulation with [bash](https://www.gnu.org/software/bash/)
-- Version control with [Git](https://git-scm.com/), along with GUI clients [SmartGit](https://www.syntevo.com/smartgit/) and [Sourcetree](https://www.sourcetreeapp.com/)
 - Text editing with [Atom](https://flight-manual.atom.io/getting-started/sections/why-atom/), along with the following packages:
   - [Atom IDE](https://ide.atom.io/)
   - [linter-js-standard](https://atom.io/packages/linter-js-standard), with _semistandard_ style selected, according to our code style requirements
   - [Minimap](https://atom.io/packages/minimap) with [git-diff plugin](https://atom.io/packages/minimap-git-diff)
   - [Teletype](https://teletype.atom.io/) ([conflict with _linter-js-standard_](https://github.com/atom/teletype/issues/241) so far)
+- Version control with [Git](https://git-scm.com/), along with GUI clients [SmartGit](https://www.syntevo.com/smartgit/) and [Sourcetree](https://www.sourcetreeapp.com/)
+- Web UI testing with [Firefox](https://www.mozilla.org/en-US/firefox/) and [Chrome](https://www.google.com/chrome/browser/desktop/index.html)
 
 ## Web
 
-- Code hosting on [GitHub](https://github.com/)
+- Code hosted by [GitHub](https://github.com/)
 - Color palette by [Color Hunt](http://colorhunt.co/c/65068)
 - Favicon generated with [Real Favicon Generator](https://realfavicongenerator.net/)
 - Repository badges generated with [Shields.io](http://shields.io/):
   - _Contributions welcome_
   - _Commitizen friendly_
   - _Code style: semistandard_
+- SSL certificate provided by [Let's Encrypt](https://letsencrypt.org/)
+- Web site hosted by [Uberspace](https://uberspace.de/) with [CentOS](https://www.centos.org/) and served by [Apache](https://httpd.apache.org/)
