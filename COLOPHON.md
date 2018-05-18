@@ -89,7 +89,7 @@ This is the place where we would like to give credit.
 - Internal team communication with [Keybase](https://keybase.io/)
 - Operating with [elementary](https://elementary.io/) and [macOS](https://developer.apple.com/macos/)
 - Terminal emulation with [bash](https://www.gnu.org/software/bash/)
-- Text editing with [Atom](https://flight-manual.atom.io/getting-started/sections/why-atom/)
+- Text editing with [Atom](https://flight-manual.atom.io/getting-started/sections/why-atom/) and [Visual Studio Code](https://code.visualstudio.com/)
 - Version control with [Git](https://git-scm.com/), along with GUI clients [SmartGit](https://www.syntevo.com/smartgit/) and [Sourcetree](https://www.sourcetreeapp.com/)
 - Web UI testing with [Firefox](https://www.mozilla.org/en-US/firefox/) and [Chrome](https://www.google.com/chrome/browser/desktop/index.html)
 
@@ -99,6 +99,10 @@ This is the place where we would like to give credit.
 - [linter-js-standard](https://atom.io/packages/linter-js-standard), with _semistandard_ style selected, according to our code style rules
 - [Minimap](https://atom.io/packages/minimap) with [git-diff plugin](https://atom.io/packages/minimap-git-diff)
 - [Teletype](https://teletype.atom.io/) ([conflict with _linter-js-standard_](https://github.com/atom/teletype/issues/241) so far)
+
+### VS Code packages
+
+- [JavaScript Semistandard Style](https://marketplace.visualstudio.com/items?itemName=flet.vscode-semistandard)
 
 ## Web
 
