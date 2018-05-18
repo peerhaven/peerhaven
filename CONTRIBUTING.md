@@ -133,6 +133,10 @@ Temporary branches have hierarchical names; examples are:
 - `release/1.2.0`
 - `hotfix/private-bookmark-visibility`
 
+If a branch is connected to an existing issue it should be referenced like this:
+
+`feature/#22-create-user-component`
+
 We are going to have 3 different types of repositories, resulting in 3 slightly varying workflows.
 
 ### APIs
