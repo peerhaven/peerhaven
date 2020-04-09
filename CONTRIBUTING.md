@@ -52,44 +52,27 @@ You should be familiar with:
 
 ## Git setup
 
-Make sure you have a GitHub account and Git installed on your system.
-If you haven't already, download the respective repository:
+Make sure you have Git installed on your system and a GitHub account.
 
-```bash
-git clone https://github.com/peerhaven/peerhaven.git
-```
+Create [SSH](https://help.github.com/en/github/authenticating-to-github/connecting-to-github-with-ssh) (for accessing GitHub) and [GPG](https://help.github.com/en/github/authenticating-to-github/managing-commit-signature-verification) (for signing your commits) keys and secure them with a passphrase each.
+[Then add the keys to your GitHub account](https://github.com/settings/keys).
 
-[Add SSH and GPG keys to your GitHub account](https://github.com/settings/keys).
-Please secure your SSH key with a passphrase; it is used for accessing GitHub.
-The GPG key is for signing your commits.
+Now clone the repository you would like to work on.
 
-To access the GitHub repositories via SSH, remember to additionally point to the origin via SSH:
-
-```bash
-git remote set-url origin git@github.com:peerhaven/peerhaven.git
-```
-
-Also, please provide your full name in commits.
-Set your name and e-mail address:
-
-- In [GitHub](https://github.com/settings/profile)
-- If your using SmartGit or Sourcetree, these can be set in the repository settings
-
+Before contributing changes, configure Git to include your full name in commits.
+Set your name and e-mail address both in [GitHub](https://github.com/settings/profile) and your local repository.
 You can specify your name, e-mail address and GPG settings all in the terminal.
 Omit the `--global` option if you prefer per-repository settings:
 
 ```bash
 git config --global user.name "Mona Lisa"
-git config --global user.email "email@example.com"
+git config --global user.email "e-mail@example.com"
 
 # replace following key ID with output from: gpg2 --list-secret-keys
-git config --global user.signingkey <key ID>
-git config --global gpg.program /usr/local/bin/gpg2 # check correct path
+git config --global user.signingkey KEY_ID
+git config --global gpg.program /usr/bin/gpg2 # check correct path
 git config --global commit.gpgsign true
 ```
-
-In SmartGit, you can add your GPG signing key in the repository settings; as GPG program you write `/usr/bin/gpg2`.
-In Sourcetree, the GPG key can also be set in the repository settings; you can specify the GPG directory in `Preferences > Advanced`, like `/usr/local/bin`.
 
 ## Code style
 
