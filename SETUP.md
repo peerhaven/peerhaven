@@ -21,8 +21,8 @@ This very repository is not needed for running peerhaven.
 ## Node.js
 
 If you install Node with the official download, you may get into permission issues.
-Instead, it is recommended to install Node with the latest version of [nvm](https://github.com/creationix/nvm#installation); this will also install npm.
-[Install Yarn](https://yarnpkg.com/en/docs/install) on top.
+Instead, it is recommended to install Node with the latest version of [nvm](https://github.com/nvm-sh/nvm); this will also install npm.
+[Install Yarn](https://classic.yarnpkg.com/en/docs/install) on top.
 
 ### Yarn
 

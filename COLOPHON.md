@@ -36,8 +36,8 @@ This is the place where we would like to give credit.
 ## Development
 
 - Server-side scripting with [Node.js](https://nodejs.org/en/)
-  - Node package management with [npm](https://www.npmjs.com/) and [Yarn](https://yarnpkg.com/en/)
-  - Node version management with [nvm](https://github.com/creationix/nvm)
+  - Node package management with [npm](https://www.npmjs.com/) and [Yarn](https://classic.yarnpkg.com/en/)
+  - Node version management with [nvm](https://github.com/nvm-sh/nvm)
 
 ### Front-end
 
