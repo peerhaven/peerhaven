@@ -8,9 +8,23 @@
 
 peerhaven is going to be a place for you to save and share your bookmarks; we're not there, yet.
 
+## Contents
+
+- [Architecture](#architecture)
+- [Getting started](#getting-started)
+- [Contributing](#contributing)
+- [Colophon](#colophon)
+- [License](#license)
+
+## Architecture
+
 Our architecture is rather modular, with the different parts being separated across repositories:
 
 - [**web**](https://github.com/peerhaven/web): Web app core
+
+## Getting started
+
+We prepared a separate document for [setting up the environment](SETUP.md).
 
 ## Contributing
 

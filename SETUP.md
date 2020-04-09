@@ -5,61 +5,28 @@ If parts of this guide don't work for your system, let us know by [submitting an
 
 ## Contents
 
-- [Languages](#languages)
-- [Git](#git)
+- [Project files](#project-files)
 - [Node.js](#nodejs)
   - [Yarn](#yarn)
 - [Ruby](#ruby)
   - [Gems](#gems)
 
-## Languages
+## Project files
 
-You should be familiar with:
+To get started, download or clone the respective repository's project files.
 
-- [JavaScript](http://javascript.info/)
-- [Markdown](https://blog.ghost.org/markdown/)
-
-## Git
-
-[Add SSH and GPG keys to your GitHub account](https://github.com/settings/keys).
-Please secure your SSH key with a passphrase; it is used for accessing GitHub.
-The GPG key is for signing your commits.
-
-To access the GitHub repositories via SSH, remember to additionally point to the origin via SSH:
-
-`git remote set-url origin git@github.com:peerhaven/peerhaven.git`
-
-Also, please provide your full name in commits.
-Set your name and e-mail address:
-
-- In [GitHub](https://github.com/settings/profile)
-- If your using SmartGit or Sourcetree, these can be set in the repository settings
-
-You can specify your name, e-mail address and GPG settings all in the terminal.
-Omit the `--global` option if you prefer per-repository settings:
-
-```bash
-git config --global user.name "Mona Lisa"
-git config --global user.email "email@example.com"
-
-# replace following key ID with output from: gpg2 --list-secret-keys
-git config --global user.signingkey <key ID>
-git config --global gpg.program /usr/local/bin/gpg2 # check correct path
-git config --global commit.gpgsign true
-```
-
-In SmartGit, you can add your GPG signing key in the repository settings; as GPG program you write `/usr/bin/gpg2`.
-In Sourcetree, the GPG key can also be set in the repository settings; you can specify the GPG directory in `Preferences > Advanced`, like `/usr/local/bin`.
+**Note**:
+This very repository is not needed for running peerhaven.
 
 ## Node.js
 
 If you install Node with the official download, you may get into permission issues.
-Instead, it is recommended to install Node with the latest version of [nvm](https://github.com/creationix/nvm#installation); this will also install npm.
-[Install Yarn](https://yarnpkg.com/en/docs/install) on top.
+Instead, it is recommended to install Node with the latest version of [nvm](https://github.com/nvm-sh/nvm); this will also install npm.
+[Install Yarn](https://classic.yarnpkg.com/en/docs/install) on top.
 
 ### Yarn
 
-Install all dependencies:
+Install all dependencies from the project root directory:
 
 ```bash
 yarn install
@@ -68,6 +35,9 @@ yarn install
 ## Ruby
 
 Install Ruby via the recommended way of your OS.
+
+**Note**:
+You may skip this if you're not planning to contribute.
 
 ### Gems
 

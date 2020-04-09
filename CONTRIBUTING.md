@@ -11,8 +11,9 @@ By participating in this project you agree to abide by its terms.
 
 ## Contents
 
-- [Getting started](#getting-started)
 - [Submitting issues](#submitting-issues)
+- [Languages](#languages)
+- [Git setup](#git-setup)
 - [Code style](#code-style)
 - [Integrating changes](#integrating-changes)
   - [APIs](#apis)
@@ -28,10 +29,6 @@ By participating in this project you agree to abide by its terms.
   - [Footer](#footer)
   - [tl;dr](#tldr)
 
-## Getting started
-
-We prepared a separate document for [setting up the environment](SETUP.md).
-
 ## Submitting issues
 
 Please take your time opening an issue, to help us respond to it in the most efficient way possible.
@@ -45,6 +42,37 @@ Some things to think about:
 - If submitting a bug report, please provide the steps to reproduce the problem.
   Describe what's the expected and the actual behaviour.
 - Suggestions concerning our workflow, tools and standards are welcome!
+
+## Languages
+
+You should be familiar with:
+
+- [JavaScript](http://javascript.info/)
+- [Markdown](https://blog.ghost.org/markdown/)
+
+## Git setup
+
+Make sure you have Git installed on your system and a GitHub account.
+
+Create [SSH](https://help.github.com/en/github/authenticating-to-github/connecting-to-github-with-ssh) (for accessing GitHub) and [GPG](https://help.github.com/en/github/authenticating-to-github/managing-commit-signature-verification) (for signing your commits) keys and secure them with a passphrase each.
+[Then add the keys to your GitHub account](https://github.com/settings/keys).
+
+Now clone the repository you would like to work on.
+
+Before contributing changes, configure Git to include your full name in commits.
+Set your name and e-mail address both in [GitHub](https://github.com/settings/profile) and your local repository.
+You can specify your name, e-mail address and GPG settings all in the terminal.
+Omit the `--global` option if you prefer per-repository settings:
+
+```bash
+git config --global user.name "Mona Lisa"
+git config --global user.email "e-mail@example.com"
+
+# replace following key ID with output from: gpg2 --list-secret-keys
+git config --global user.signingkey KEY_ID
+git config --global gpg.program /usr/bin/gpg2 # check correct path
+git config --global commit.gpgsign true
+```
 
 ## Code style
 
@@ -79,18 +107,25 @@ git push
 
 Then delete the temporary branch both locally and on GitHub.
 
+If you happen to have conflicts in a pull request, resolving those from the web app results in a verified merge commit but creates a commit message that doesn't comply with our guideline ([example](https://github.com/peerhaven/web/commit/445f6b9d65d4c53e92df10b74b29b0e9187401f9)).
+Therefore, merge `develop`/`master` into your temporary branch from within your Git client and resolve the conflicts there.
+
 Temporary branches have hierarchical names; examples are:
 
 - `feature/add-github-auth`
 - `release/1.2.0`
 - `hotfix/private-bookmark-visibility`
 
+If a branch is connected to an existing issue it should be referenced like this:
+
+`feature/#22-create-user-component`
+
 We are going to have 3 different types of repositories, resulting in 3 slightly varying workflows.
 
 ### APIs
 
 Having a coherent codebase and being presumably ready to ship, a `release` branch is created from the `develop` branch, the version number following the principles of [semantic versioning 2.0.0](https://semver.org/).
-Until incorporating [feature flags](https://readwrite.com/2016/01/22/staging-servers/), the code in the newly created `release` branch is being tested internally in a staging environment, at least for a week.
+Until incorporating [feature flags](https://readwrite.com/2016/01/22/staging-servers/), the code in the newly created `release` branch is being tested internally in a staging environment, usually for a week.
 When code gets merged into `master`, we push the code into our production system.
 From this point on, a new `release` branch may be created.
 
@@ -98,7 +133,7 @@ From this point on, a new `release` branch may be created.
 
 [Semantic versioning doesn't make much sense for apps without a public API](https://grimoire.ca/dev/webapp-versions), like our web app.
 So releases are named by date instead:
-`release/2018-07-21`, or `release/2018-07-21a` when integrating hotfixes.
+`release/2018-07-21` (date of planned merge into master).
 That's the only difference compared to repositories containing APIs.
 
 ### Documentation
