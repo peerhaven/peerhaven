@@ -140,7 +140,7 @@ That's the only difference compared to repositories containing APIs.
 
 Repositories without code, like this one, have a drastically simplified workflow.
 They have no versions and only `master` has an infinite lifetime.
-Commits go into temporary `content` branches, like `content/add-code-of-conduct`, and are merged into `master` by pull requests.
+Commits go into temporary `build` or `content` branches, like `content/add-code-of-conduct`, and are merged into `master` by pull requests.
 
 ## Commit message guideline
 
