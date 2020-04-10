@@ -23,7 +23,7 @@
   },
   "scripts": {
     "covgen": "covgen",
-    "cz": "semistandard --fix && git add . && mdl . && git-cz",
+    "cz": "semistandard && mdl . && git add . && git-cz",
     "js-lint": "semistandard --verbose | snazzy"
   },
   "version": "1.0.3"
