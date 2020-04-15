@@ -1,27 +1,28 @@
 # Markdown code style
 
-This styleguide is based on the [rules of the Markdown lint tool](https://github.com/markdownlint/markdownlint/blob/master/docs/RULES.md) (by Mark Harrison) and differs as follows.
+This styleguide is based on the [rules of the Markdown lint tool by David Anson](https://github.com/DavidAnson/markdownlint/blob/master/doc/Rules.md) and differs as follows.
 Check our existing Markdown documents to see how the style is applied in practice.
 
 ## Contents
 
 - [Excluded rules](#excluded-rules)
 - [Configured rules](#configured-rules)
-  - [MD003](#md003) (header style)
-  - [MD004](#md004) (unordered list style)
-  - [MD009](#md009) (trailing spaces)
-  - [MD026](#md026) (trailing punctuation in header)
-  - [MD035](#md035) (horizontal rule style)
+  + [MD003](#md003) (heading style)
+  + [MD004](#md004) (unordered list style)
+  + [MD024](#md024) (multiple headings with the same content)
+  + [MD026](#md026) (trailing punctuation in header)
+  + [MD035](#md035) (horizontal rule style)
+  + [MD044](#md044) (proper names)
+  + [MD046](#md046) (code block style)
+  + [MD048](#md048) (code fence style)
 - [Custom rules](#custom-rules)
 
 ## Excluded rules
 
-- [MD013](https://github.com/markdownlint/markdownlint/blob/master/docs/RULES.md#md013---line-length)
-- [MD028](https://github.com/markdownlint/markdownlint/blob/master/docs/RULES.md#md028---blank-line-inside-blockquote)
-- [MD034](https://github.com/markdownlint/markdownlint/blob/master/docs/RULES.md#md034---bare-url-used)
-- [MD039](https://github.com/markdownlint/markdownlint/blob/master/docs/RULES.md#md039---spaces-inside-link-text)
-- [MD040](https://github.com/markdownlint/markdownlint/blob/master/docs/RULES.md#md040---fenced-code-blocks-should-have-a-language-specified)
-- [MD041](https://github.com/markdownlint/markdownlint/blob/master/docs/RULES.md#md041---first-line-in-file-should-be-a-top-level-header)
+- [MD013](https://github.com/DavidAnson/markdownlint/blob/master/doc/Rules.md#md013---line-length) (line length)
+- [MD034](https://github.com/DavidAnson/markdownlint/blob/master/doc/Rules.md#md034---bare-url-used) (bare URL used)
+- [MD040](https://github.com/DavidAnson/markdownlint/blob/master/doc/Rules.md#md040---fenced-code-blocks-should-have-a-language-specified) (fenced code blocks should have a language specified)
+- [MD041](https://github.com/DavidAnson/markdownlint/blob/master/doc/Rules.md#md041---first-line-in-file-should-be-a-top-level-heading) (first line in file should be a top level heading)
 
 ## Configured rules
 
@@ -29,34 +30,75 @@ The following rules have been adapted.
 
 ### MD003
 
-**Header style**: ATX
+**Heading style**:
+ATX
 
 ```markdown
-# We use ATX style headers
+# We use ATX style headings
 ```
 
 ### MD004
 
-**Unordered list style**: Dash
+**Unordered list style**:
+Consistent for list level
 
 ```markdown
 - Item 1
+  + Item 1.1
+  + Item 1.2
+    * Item 1.2.1
+    * Item 1.2.2
 - Item 2
 - Item 3
 ```
 
-### MD009
+### MD024
 
-**Trailing spaces**: 2 allowed (for line breaks)
+**Multiple headings with the same content**:
+Allowed if they're not siblings
+
+```markdown
+# Changelog
+## 1.0.0
+### Features
+## 2.0.0
+### Features
+```
 
 ### MD026
 
-**Trailing punctuation in header**: `?` allowed
+**Trailing punctuation in header**:
+`?` and `!` allowed
 
 ### MD035
 
-**Horizontal rule style**: `---`
+**Horizontal rule style**:
+`---`
+
+### MD044
+
+**Proper names should have the correct capitalization**:
+JavaScript, peerhaven, ...
+
+### MD046
+
+**Code block style**:
+Fenced
+
+Define the language of a code block if possible, to facilitate syntax highlighting.
+
+````markdown
+```bash
+$ tree -a
+3232 directories, 20741 files
+```
+````
+
+### MD048
+
+**Code fence style**:
+Backtick (see example above)
 
 ## Custom rules
 
-Insert a line break for every new sentence, and only then.
+Insert a line break for every new sentence and after a colon – and only then.
