@@ -16,18 +16,18 @@ By participating in this project you agree to abide by its terms.
 - [Git setup](#git-setup)
 - [Code style](#code-style)
 - [Integrating changes](#integrating-changes)
-  - [APIs](#apis)
-  - [Clients](#clients)
-  - [Documentation](#documentation)
+  + [APIs](#apis)
+  + [Clients](#clients)
+  + [Documentation](#documentation)
 - [Commit message guideline](#commit-message-guideline)
-  - [Format](#format)
-  - [Revert](#revert)
-  - [Type](#type)
-  - [Scope](#scope)
-  - [Subject](#subject)
-  - [Body](#body)
-  - [Footer](#footer)
-  - [tl;dr](#tldr)
+  + [Format](#format)
+  + [Revert](#revert)
+  + [Type](#type)
+  + [Scope](#scope)
+  + [Subject](#subject)
+  + [Body](#body)
+  + [Footer](#footer)
+  + [tl;dr](#tldr)
 
 ## Submitting issues
 
@@ -76,15 +76,15 @@ git config --global commit.gpgsign true
 
 ## Code style
 
-Whenever you commit with `yarn run cz` the styles are automatically checked (for Markdown) or even applied (for JavaScript), but you can also check your files manually.
+Whenever you commit with `yarn run cz` the styles are automatically checked, but you can also check your files manually (from project root directory respectively).
 
 - **JavaScript**  
-  We use [semistandard](https://github.com/Flet/semistandard) which is based on [standard](https://github.com/standard/standard/blob/master/docs/RULES-en.md) and adds semicolons to the rules.
+  We use [semistandard](https://github.com/standard/semistandard) which is based on [standard](https://github.com/standard/standard/blob/master/docs/RULES-en.md) and adds semicolons to the rules.
   Check manually with `yarn run js-lint`.
 
 - **Markdown**  
   See separate document for [Markdown code style rules](codestyle/markdown.md).
-  Check manually with `mdl .` from project root directory.
+  Check manually with `yarn run md-lint`.
 
 ## Integrating changes
 

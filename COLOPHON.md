@@ -9,9 +9,8 @@ This is the place where we would like to give credit.
 - [Binary file formats](#binary-file-formats)
 - [Community](#community)
 - [Development](#development)
-  - [Front-end](#front-end)
-  - [Node packages](#node-packages)
-  - [Ruby gems](#ruby-gems)
+  + [Front-end](#front-end)
+  + [Node packages](#node-packages)
 - [Fonts](#fonts)
 - [Languages](#languages)
 - [Resources](#resources)
@@ -36,32 +35,29 @@ This is the place where we would like to give credit.
 ## Development
 
 - Server-side scripting with [Node.js](https://nodejs.org/en/)
-  - Node package management with [npm](https://www.npmjs.com/) and [Yarn](https://classic.yarnpkg.com/en/)
-  - Node version management with [nvm](https://github.com/nvm-sh/nvm)
+  + Node package management with [npm](https://www.npmjs.com/) and [Yarn](https://classic.yarnpkg.com/en/)
+  + Node version management with [nvm](https://github.com/nvm-sh/nvm)
 
 ### Front-end
 
 - CSS framework by [Bulma](https://bulma.io/), with [Buefy](https://buefy.github.io/) UI components
 - UI JavaScript framework by [Vue.js](https://vuejs.org/), with the following plugins:
-  - Meta data management with [vue-meta](https://github.com/declandewet/vue-meta)
+  + Meta data management with [vue-meta](https://github.com/declandewet/vue-meta)
 
 ### Node packages
 
 - Bundling with [Webpack](https://webpack.js.org/), with the following plugins:
-  - [CSS Loader](https://github.com/webpack-contrib/css-loader)
-  - [Extract Text Plugin](https://github.com/webpack-contrib/extract-text-webpack-plugin)
-  - [Sass Loader](https://github.com/webpack-contrib/sass-loader)
-  - [Webpack Bundle Analyzer](https://github.com/webpack-contrib/webpack-bundle-analyzer)
+  + [CSS Loader](https://github.com/webpack-contrib/css-loader)
+  + [Extract Text Plugin](https://github.com/webpack-contrib/extract-text-webpack-plugin)
+  + [Sass Loader](https://github.com/webpack-contrib/sass-loader)
+  + [Webpack Bundle Analyzer](https://github.com/webpack-contrib/webpack-bundle-analyzer)
 - Code of conduct generation with [Covenant Generator](https://github.com/simonv3/covenant-generator)
 - Commit message conventions with [Commitizen](http://commitizen.github.io/cz-cli/) and [cz-customizable](https://github.com/leonardoanalista/cz-customizable) adapter
 - Environment variables with [dotenv](https://github.com/motdotla/dotenv)
-- JavaScript linting with [semistandard](https://github.com/Flet/semistandard), and [snazzy](https://github.com/standard/snazzy) for prettier output
+- JavaScript linting with [semistandard](https://github.com/standard/semistandard), and [snazzy](https://github.com/standard/snazzy) for prettier output
+- Markdown linting with [markdownlint-cli](https://github.com/igorshubovych/markdownlint-cli)
 - Server-side rendering with [Nuxt.js](https://nuxtjs.org/)
 - Stylesheet preprocessing with [node-sass](https://github.com/sass/node-sass)
-
-### Ruby gems
-
-- Markdown linting with [mdl](https://github.com/markdownlint/markdownlint)
 
 ## Fonts
 
@@ -71,7 +67,7 @@ This is the place where we would like to give credit.
 
 ## Languages
 
-- Development with [JavaScript](https://en.wikipedia.org/wiki/JavaScript) and [Ruby](http://www.ruby-lang.org/)
+- Development with [JavaScript](https://en.wikipedia.org/wiki/JavaScript)
 - Documentation with [Markdown](https://daringfireball.net/projects/markdown/)
 - Markup with [HTML](https://en.wikipedia.org/wiki/HTML) and [XML](https://en.wikipedia.org/wiki/XML)
 - Styling with [CSS](https://en.wikipedia.org/wiki/Cascading_Style_Sheets); preprocessing with [Sass](https://sass-lang.com/)
@@ -98,7 +94,7 @@ This is the place where we would like to give credit.
 - [Atom IDE](https://ide.atom.io/)
 - [linter-js-standard](https://atom.io/packages/linter-js-standard), with _semistandard_ style selected, according to our code style rules
 - [Minimap](https://atom.io/packages/minimap) with [git-diff plugin](https://atom.io/packages/minimap-git-diff)
-- [Teletype](https://teletype.atom.io/) ([conflict with _linter-js-standard_](https://github.com/atom/teletype/issues/241) so far)
+- [Teletype](https://teletype.atom.io/) ([conflict with _linter-js-standard_](https://github.com/atom/teletype/issues/228) so far)
 
 ### VS Code packages
 
@@ -111,8 +107,8 @@ This is the place where we would like to give credit.
 - Color palette by [Color Hunt](http://colorhunt.co/c/65068)
 - Favicon generated with [Real Favicon Generator](https://realfavicongenerator.net/)
 - Repository badges generated with [Shields.io](http://shields.io/):
-  - _Contributions welcome_
-  - _Commitizen friendly_
-  - _Code style: semistandard_
+  + _Contributions welcome_
+  + _Commitizen friendly_
+  + _Code style: semistandard_
 - SSL certificate provided by [Let's Encrypt](https://letsencrypt.org/)
 - Web site hosted by [Uberspace](https://uberspace.de/) with [CentOS](https://www.centos.org/) and served by [Apache](https://httpd.apache.org/)

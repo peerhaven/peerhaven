@@ -7,9 +7,7 @@ If parts of this guide don't work for your system, let us know by [submitting an
 
 - [Project files](#project-files)
 - [Node.js](#nodejs)
-  - [Yarn](#yarn)
-- [Ruby](#ruby)
-  - [Gems](#gems)
+  + [Yarn](#yarn)
 
 ## Project files
 
@@ -30,17 +28,4 @@ Install all dependencies from the project root directory:
 
 ```bash
 yarn install
-```
-
-## Ruby
-
-Install Ruby via the recommended way of your OS.
-
-**Note**:
-You may skip this if you're not planning to contribute.
-
-### Gems
-
-```bash
-gem install mdl
 ```
