@@ -1,6 +1,6 @@
 # How to contribute
 
-We develop peerhaven in the open because we want to be a transparent platform and to provide an easy way to integrate your bug fixes and improvements.
+We develop peerhaven in the open because we want to be a transparent platform and provide an easy way to integrate your bug fixes and improvements.
 Community contributions are helpful and very welcome.
 This document describes how you can take part in improving peerhaven.
 
@@ -13,7 +13,9 @@ By participating in this project you agree to abide by its terms.
 
 - [Submitting issues](#submitting-issues)
 - [Languages](#languages)
+- [SSH and GPG keys](#ssh-and-gpg-keys)
 - [Git setup](#git-setup)
+- [Contributor agreement](#contributor-agreement)
 - [Code style](#code-style)
 - [Integrating changes](#integrating-changes)
   + [APIs](#apis)
@@ -50,14 +52,36 @@ You should be familiar with:
 - [JavaScript](http://javascript.info/)
 - [Markdown](https://blog.ghost.org/markdown/)
 
-## Git setup
-
-Make sure you have Git installed on your system and a GitHub account.
+## SSH and GPG keys
 
 Create [SSH](https://help.github.com/en/github/authenticating-to-github/connecting-to-github-with-ssh) (for accessing GitHub) and [GPG](https://help.github.com/en/github/authenticating-to-github/managing-commit-signature-verification) (for signing your commits) keys and secure them with a passphrase each.
 [Then add the keys to your GitHub account](https://github.com/settings/keys).
 
-Now clone the repository you would like to work on.
+The public key of every new GPG key pair you use for committing to any of peerhaven's repositories shall be added to the `keys` folder in the format of `USER.KEY_ID.pub`, where `USER` is your GitHub username and `KEY_ID` is the 16-digit identifier of your public key.
+
+Show a list of existing key pairs:
+
+```bash
+$ gpg2 --list-keys --keyid-format LONG
+/home/alice/.gnupg/pubring.kbx
+-------------------------------
+pub   rsa4096/7AC891336421B3D4 2020-01-02 [SC] [expires: 2024-01-01]
+      0FD09AA324DB8FA0D11615D77AC891336421B3D4
+uid               Alice <alice@wonderland.net>
+sub   rsa4096/B4A9B1530AADA321 2020-01-02 [E] [expires: 2024-01-01]
+```
+
+To create the key file, run one of these options:
+
+```bash
+gpg2 --output alice.7AC891336421B3D4.pub --armor --export 7AC891336421B3D4
+gpg2 --output alice.7AC891336421B3D4.pub --armor --export alice@wonderland.net
+```
+
+## Git setup
+
+Make sure you have Git installed on your system.
+Then clone the repository you would like to work on.
 
 Before contributing changes, configure Git to include your full name in commits.
 Set your name and e-mail address both in [GitHub](https://github.com/settings/profile) and your local repository.
@@ -74,9 +98,23 @@ git config --global gpg.program /usr/bin/gpg2 # check correct path
 git config --global commit.gpgsign true
 ```
 
+## Contributor agreement
+
+Before we can accept your contributions, we need you to sign our contributor agreement:
+
+- If you have sole ownership of intellectual property rights to your contributions, please sign the [Individual Contributor Agreement](legal/individual-caa.md).
+
+- If you're making contributions on behalf of your employer, please sign the [Entity Contributor Agreement](legal/entity-caa.md).
+
+- If neither you nor your employer owns the copyright to your contributions, please submit an issue or get in touch with us at <e-mail@stieben.de>.
+
+To sign the agreement, simply add yourself to the list of signees; the list is alphabetically sorted by GitHub username.
+As your commits are signed with your GPG key, this addition counts as an electronic signature.
+Do not alter the lines of other signees.
+
 ## Code style
 
-Whenever you commit with `yarn run cz` the styles are automatically checked, but you can also check your files manually (from project root directory respectively).
+Whenever you commit with `yarn run cz` the styles are automatically checked, but you can also check your files manually (from project root directory).
 
 - **JavaScript**  
   We use [semistandard](https://github.com/standard/semistandard) which is based on [standard](https://github.com/standard/standard/blob/master/docs/RULES-en.md) and adds semicolons to the rules.
@@ -199,9 +237,9 @@ Possible scopes unclear for now.
 
 The `subject` contains a summary of the change:
 
-- Use the imperative, present tense: `change`, not `changed` or `changes`.
-- Don't capitalize the first letter.
-- No dot at the end.
+- Use the imperative, present tense: `change`, not `changed` or `changes`
+- Don't capitalize the first letter
+- No dot at the end
 
 ### Body
 
@@ -225,5 +263,5 @@ Once you're ready to commit, just run:
 yarn run cz
 ```
 
-_Commitizen_ will ask you several questions and generate a valid commit message for you.
+Commitizen will ask you several questions and generate a valid commit message for you.
 Still, it helps if you have read our guideline at least once.

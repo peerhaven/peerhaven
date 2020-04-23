@@ -28,5 +28,5 @@
     "md-lint": "markdownlint '**/*.md'",
     "js-lint": "semistandard --verbose | snazzy"
   },
-  "version": "1.0.4"
+  "version": "1.0.5"
 }
