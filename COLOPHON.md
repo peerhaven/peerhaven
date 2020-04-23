@@ -13,6 +13,7 @@ This is the place where we would like to give credit.
   + [Node packages](#node-packages)
 - [Fonts](#fonts)
 - [Languages](#languages)
+- [Legal](#legal)
 - [Resources](#resources)
 - [Software](#software)
 - [Web](#web)
@@ -73,6 +74,13 @@ This is the place where we would like to give credit.
 - Styling with [CSS](https://en.wikipedia.org/wiki/Cascading_Style_Sheets); preprocessing with [Sass](https://sass-lang.com/)
 - Vector graphics with [SVG](https://en.wikipedia.org/wiki/Scalable_Vector_Graphics)
 
+## Legal
+
+- Contributor agreements based on [Project Harmony](http://www.harmonyagreements.org/)
+- Licenses
+  + [Creative Commons](https://creativecommons.org/)
+  + [Fair Source](https://fair.io/)
+
 ## Resources
 
 - [CSS-Tricks](https://css-tricks.com/)
@@ -82,6 +90,7 @@ This is the place where we would like to give credit.
 
 ## Software
 
+- Commit signatures with [GNU Privacy Guard](https://gnupg.org/)
 - Internal team communication with [Keybase](https://keybase.io/)
 - Operating with [elementary](https://elementary.io/) and [macOS](https://developer.apple.com/macos/)
 - Terminal emulation with [bash](https://www.gnu.org/software/bash/)
