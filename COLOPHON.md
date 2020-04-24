@@ -83,9 +83,11 @@ This is the place where we would like to give credit.
 
 ## Resources
 
+- [Atlassian Git Tutorials](https://www.atlassian.com/git/tutorials)
 - [CSS-Tricks](https://css-tricks.com/)
 - [HEAD](https://gethead.info/), a guide to `<head>` elements
 - [Keep a Changelog](https://keepachangelog.com/en/1.0.0/)
+- [Project Guidelines](https://github.com/elsewhencode/project-guidelines)
 - [The Sass Way](http://thesassway.com/)
 
 ## Software
@@ -116,8 +118,9 @@ This is the place where we would like to give credit.
 - Color palette by [Color Hunt](http://colorhunt.co/c/65068)
 - Favicon generated with [Real Favicon Generator](https://realfavicongenerator.net/)
 - Repository badges generated with [Shields.io](http://shields.io/):
+  + _License: Fair Source 5_
   + _Contributions welcome_
-  + _Commitizen friendly_
   + _Code style: semistandard_
+  + _Commitizen friendly_
 - SSL certificate provided by [Let's Encrypt](https://letsencrypt.org/)
 - Web site hosted by [Uberspace](https://uberspace.de/) with [CentOS](https://www.centos.org/) and served by [Apache](https://httpd.apache.org/)

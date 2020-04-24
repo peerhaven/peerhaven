@@ -2,9 +2,10 @@
 
 # peerhaven
 
+[![License: Fair Source 5](img/license-fair-source-5.svg)](LICENSE.md)
 [![Contributions welcome](img/contributions-welcome.svg)](CONTRIBUTING.md)
-[![Commitizen friendly](img/commitizen-friendly.svg)](http://commitizen.github.io/cz-cli/)
 [![Code style: semistandard](img/code-style-semistandard.svg)](https://github.com/standard/semistandard)
+[![Commitizen friendly](img/commitizen-friendly.svg)](http://commitizen.github.io/cz-cli/)
 
 peerhaven is going to be a place for you to save and share your bookmarks; we're not there, yet.
 
