@@ -2,9 +2,10 @@
 
 # peerhaven
 
+[![License: Fair Source 5](img/license-fair-source-5.svg)](LICENSE.md)
 [![Contributions welcome](img/contributions-welcome.svg)](CONTRIBUTING.md)
-[![Commitizen friendly](img/commitizen-friendly.svg)](http://commitizen.github.io/cz-cli/)
 [![Code style: semistandard](img/code-style-semistandard.svg)](https://github.com/standard/semistandard)
+[![Commitizen friendly](img/commitizen-friendly.svg)](http://commitizen.github.io/cz-cli/)
 
 peerhaven is going to be a place for you to save and share your bookmarks; we're not there, yet.
 
@@ -36,5 +37,5 @@ See our [colophon](COLOPHON.md).
 
 ## License
 
-peerhaven has [no license](https://choosealicense.com/no-permission/) so far which puts our work under exclusive copyright.
-There is an [open issue](https://github.com/peerhaven/peerhaven/issues/1) for discussing this.
+- peerhaven (i.e. its software / source code) is licensed under [Fair Source 5 (v0.9)](https://fair.io/)
+- Documentation and media are licensed under [Creative Commons Attribution 4.0 International](https://creativecommons.org/licenses/by/4.0/)
