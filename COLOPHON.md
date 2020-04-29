@@ -1,6 +1,8 @@
 # Colophon
 
-peerhaven could not be possible without the work it is based on.
+peerhaven is created and maintained by [Andrej Stieben](https://github.com/stieben).
+
+This project could not be possible without the work it is based on.
 This is the place where we would like to give credit.
 
 ## Contents
@@ -20,9 +22,9 @@ This is the place where we would like to give credit.
 
 ## Artworks
 
-- Emoticon (on error pages) by [freepik](https://www.freepik.com/free-vector/funny-round-smileys-pack_833320.htm)
+- Emoticon (on error pages) by [Freepik](https://www.freepik.com/free-vector/funny-round-smileys-pack_833320.htm)
 - Icons by [Material Design Icons](https://materialdesignicons.com/)
-- Logo created by [Andrej Stieben](https://github.com/stieben) and [Sara Pstrowska](https://github.com/p-sara) in [Adobe Flash](https://en.wikipedia.org/wiki/Adobe_Flash)
+- Logo by [sentavio / Freepik](https://www.freepik.com/free-vector/heart-logo_7057469.htm)
 
 ## Binary file formats
 
@@ -93,10 +95,12 @@ This is the place where we would like to give credit.
 ## Software
 
 - Commit signatures with [GNU Privacy Guard](https://gnupg.org/)
+- Image editing with [Paint.NET](https://www.getpaint.net/)
 - Internal team communication with [Keybase](https://keybase.io/)
-- Operating with [elementary](https://elementary.io/) and [macOS](https://developer.apple.com/macos/)
+- Operating with [elementary](https://elementary.io/), [macOS](https://developer.apple.com/macos/) and [Windows](https://www.microsoft.com/en-us/windows)
 - Terminal emulation with [bash](https://www.gnu.org/software/bash/)
 - Text editing with [Atom](https://flight-manual.atom.io/getting-started/sections/why-atom/) and [Visual Studio Code](https://code.visualstudio.com/)
+- Vector graphics with [Gravit Designer](https://www.designer.io/)
 - Version control with [Git](https://git-scm.com/), along with GUI clients [SmartGit](https://www.syntevo.com/smartgit/) and [Sourcetree](https://www.sourcetreeapp.com/)
 - Web UI testing with [Firefox](https://www.mozilla.org/en-US/firefox/) and [Chrome](https://www.google.com/chrome/browser/desktop/index.html)
 

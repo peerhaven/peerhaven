@@ -1,4 +1,4 @@
-[![peerhaven logo](img/ph-circle-white-green-transparent-100.png)](https://peerhaven.net/)
+[![peerhaven logo (a colourful heart)](img/ph-heart-rounded-120.png)](https://peerhaven.net/)
 
 # peerhaven
 
