@@ -88,9 +88,12 @@ This is the place where we would like to give credit.
 - [Atlassian Git Tutorials](https://www.atlassian.com/git/tutorials)
 - [CSS-Tricks](https://css-tricks.com/)
 - [HEAD](https://gethead.info/), a guide to `<head>` elements
+- [HTML Style Guide by Ryan Sechrest](https://gist.github.com/ryansechrest/8693303)
 - [Keep a Changelog](https://keepachangelog.com/en/1.0.0/)
 - [Project Guidelines](https://github.com/elsewhencode/project-guidelines)
 - [The Sass Way](http://thesassway.com/)
+- WHATWG:
+  [HTML FAQ](https://github.com/whatwg/html/blob/master/FAQ.md), [HTML Spec](https://html.spec.whatwg.org/multipage/), [Wiki](https://wiki.whatwg.org/)
 
 ## Software
 

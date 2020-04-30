@@ -1,7 +1,6 @@
-# Markdown code style
+# Markdown style guide
 
-This styleguide is based on the [rules of the Markdown lint tool by David Anson](https://github.com/DavidAnson/markdownlint/blob/master/doc/Rules.md) and differs as follows.
-Check our existing Markdown documents to see how the style is applied in practice.
+This style guide is based on the [rules of the Markdown lint tool by David Anson](https://github.com/DavidAnson/markdownlint/blob/master/doc/Rules.md) and differs as follows.
 
 ## Contents
 

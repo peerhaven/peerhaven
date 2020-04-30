@@ -16,7 +16,7 @@ By participating in this project you agree to abide by its terms.
 - [SSH and GPG keys](#ssh-and-gpg-keys)
 - [Git setup](#git-setup)
 - [Contributor agreement](#contributor-agreement)
-- [Code style](#code-style)
+- [Coding style guides](#coding-style-guides)
 - [Integrating changes](#integrating-changes)
   + [APIs](#apis)
   + [Clients](#clients)
@@ -49,6 +49,7 @@ Some things to think about:
 
 You should be familiar with:
 
+- [HTML](https://developer.mozilla.org/en-US/docs/Learn/HTML)
 - [JavaScript](http://javascript.info/)
 - [Markdown](https://blog.ghost.org/markdown/)
 
@@ -112,16 +113,21 @@ To sign the agreement, simply add yourself to the list of signees; the list is a
 As your commits are signed with your GPG key, this addition counts as an electronic signature.
 Do not alter the lines of other signees.
 
-## Code style
+## Coding style guides
 
-Whenever you commit with `yarn run cz` the styles are automatically checked, but you can also check your files manually (from project root directory).
+Whenever you commit with `yarn run cz` the styles are automatically checked, but you can also check your files manually with the respective linter (from project root directory) – HTML being an exception.
+Refer to our existing files to see how the styles are applied in practice.
+
+- **HTML**  
+  See separate document for [HTML style guide](style-guides/html.md).
+  A linter is not being used.
 
 - **JavaScript**  
   We use [semistandard](https://github.com/standard/semistandard) which is based on [standard](https://github.com/standard/standard/blob/master/docs/RULES-en.md) and adds semicolons to the rules.
   Check manually with `yarn run js-lint`.
 
 - **Markdown**  
-  See separate document for [Markdown code style rules](codestyle/markdown.md).
+  See separate document for [Markdown style guide](style-guides/markdown.md).
   Check manually with `yarn run md-lint`.
 
 ## Integrating changes
