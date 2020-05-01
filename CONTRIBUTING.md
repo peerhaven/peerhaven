@@ -271,3 +271,13 @@ yarn run cz
 
 Commitizen will ask you several questions and generate a valid commit message for you.
 Still, it helps if you have read our guideline at least once.
+
+---
+
+For questions / discussion, refer to these issues:
+
+- [#1 Pick a license](https://github.com/peerhaven/peerhaven/issues/1)
+- [#4 Create contributing guideline](https://github.com/peerhaven/peerhaven/issues/4)
+- [#5 Add Commitizen](https://github.com/peerhaven/peerhaven/issues/5)
+- [#6 Create or reference commit message guideline](https://github.com/peerhaven/peerhaven/issues/6)
+- [#10 Optimize merge process](https://github.com/peerhaven/peerhaven/issues/10)

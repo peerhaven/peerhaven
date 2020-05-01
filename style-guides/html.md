@@ -53,3 +53,8 @@ In general, we try to be as close to well-formed XML as possible.
      id="peerhaven-logo"
      src="img/peerhaven-logo.png" />
 ```
+
+---
+
+For questions / discussion, refer to this issue:
+[#11 Add HTML style guide & linter](https://github.com/peerhaven/peerhaven/issues/11)

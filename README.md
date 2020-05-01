@@ -39,3 +39,5 @@ See our [colophon](COLOPHON.md).
 
 - peerhaven (i.e. its software / source code) is licensed under [Fair Source 5 (v0.9)](https://fair.io/)
 - Documentation and media are licensed under [Creative Commons Attribution 4.0 International](https://creativecommons.org/licenses/by/4.0/)
+- For questions / discussion, refer to this issue:
+  [#1 Pick a license](https://github.com/peerhaven/peerhaven/issues/1)

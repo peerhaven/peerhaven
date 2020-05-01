@@ -101,3 +101,8 @@ Backtick (see example above)
 ## Custom rules
 
 Insert a line break for every new sentence and after a colon – and only then.
+
+---
+
+For questions / discussion, refer to this issue:
+[#3 Create or find Markdown style guide](https://github.com/peerhaven/peerhaven/issues/3)

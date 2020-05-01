@@ -49,4 +49,9 @@ Project maintainers who do not follow or enforce the code of conduct in good fai
 
 This code of conduct is adapted from the [Contributor Covenant](https://www.contributor-covenant.org), version 1.4, available at <https://www.contributor-covenant.org/version/1/4/code-of-conduct.html>.
 
+---
+
 Formatting changed to conform to our style guideline.
+
+For questions / discussion, refer to this issue:
+[#2 Create code of conduct](https://github.com/peerhaven/peerhaven/issues/2)
