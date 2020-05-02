@@ -91,6 +91,8 @@ This is the place where we would like to give credit.
 - [HTML Style Guide by Ryan Sechrest](https://gist.github.com/ryansechrest/8693303)
 - [Keep a Changelog](https://keepachangelog.com/en/1.0.0/)
 - [Project Guidelines](https://github.com/elsewhencode/project-guidelines)
+- [Sass Guidelines](https://sass-guidelin.es/)
+- [Scalable and Modular Architecture for CSS](http://smacss.com/)
 - [The Sass Way](http://thesassway.com/)
 - WHATWG:
   [HTML FAQ](https://github.com/whatwg/html/blob/master/FAQ.md), [HTML Spec](https://html.spec.whatwg.org/multipage/), [Wiki](https://wiki.whatwg.org/)
