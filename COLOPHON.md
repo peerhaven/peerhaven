@@ -29,7 +29,7 @@ This is the place where we would like to give credit.
 ## Binary file formats
 
 - Raster graphics with [PNG](https://en.wikipedia.org/wiki/Portable_Network_Graphics)
-- Web browser favicon with [ICO](https://en.wikipedia.org/wiki/ICO_(file_format%29)
+- Web browser favicon with [ICO](https://en.wikipedia.org/wiki/ICO_%28file_format%29)
 
 ## Community
 

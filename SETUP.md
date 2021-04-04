@@ -20,11 +20,10 @@ This very repository is not needed for running peerhaven.
 
 If you install Node with the official download, you may get into permission issues.
 Instead, it is recommended to install Node with the latest version of [nvm](https://github.com/nvm-sh/nvm); this will also install npm.
-[Install Yarn](https://classic.yarnpkg.com/en/docs/install) on top.
 
 ### Yarn
 
-Install all dependencies from the project root directory:
+[Install Yarn](https://classic.yarnpkg.com/en/docs/install) on top of npm, then install all dependencies from the project root directory:
 
 ```bash
 yarn install

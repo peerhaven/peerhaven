@@ -7,7 +7,7 @@
 [![Code style: semistandard](img/code-style-semistandard.svg)](https://github.com/standard/semistandard)
 [![Commitizen friendly](img/commitizen-friendly.svg)](http://commitizen.github.io/cz-cli/)
 
-peerhaven is going to be a place for you to save and share your bookmarks; we're not there, yet.
+peerhaven is going to be a place for journaling, but we're not there, yet.
 
 ## Contents
 
