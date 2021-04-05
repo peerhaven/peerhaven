@@ -130,7 +130,7 @@ Before we can accept your contributions, we need you to sign our contributor agr
 
 - If you're making contributions on behalf of your employer, please sign the [Entity Contributor Agreement](legal/entity-caa.md).
 
-- If neither you nor your employer owns the copyright to your contributions, please submit an issue or get in touch with us at <e-mail@stieben.de>.
+- If neither you nor your employer owns the copyright to your contributions, please submit an issue or get in touch with us at <legal@peerhaven.net>.
 
 To sign the agreement, simply add yourself to the list of signees; the list is alphabetically sorted by GitHub username.
 As your commits are signed with your GPG key, this addition counts as an electronic signature.
