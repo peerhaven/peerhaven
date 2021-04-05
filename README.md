@@ -14,6 +14,7 @@ peerhaven is going to be a place for journaling, but we're not there, yet.
 - [Architecture](#architecture)
 - [Getting started](#getting-started)
 - [Contributing](#contributing)
+- [Security policy](#security-policy)
 - [Colophon](#colophon)
 - [License](#license)
 
@@ -30,6 +31,10 @@ We prepared a separate document for [setting up the environment](SETUP.md).
 ## Contributing
 
 See our [guide for contributors](CONTRIBUTING.md).
+
+## Security policy
+
+See our [security policy](SECURITY.md).
 
 ## Colophon
 
