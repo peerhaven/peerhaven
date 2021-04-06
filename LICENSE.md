@@ -1,6 +1,6 @@
 # Fair Source License, version 0.9
 
-Copyright (C) 2020 Andrej Stieben  
+Copyright (C) 2018 – 2021 Andrej Stieben  
 Licensor: Andrej Stieben  
 Software: peerhaven  
 Use Limitation: 5 users

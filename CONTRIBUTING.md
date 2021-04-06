@@ -13,10 +13,10 @@ By participating in this project you agree to abide by its terms.
 
 - [Submitting issues](#submitting-issues)
 - [Languages](#languages)
+  + [Coding style guides](#coding-style-guides)
 - [SSH and GPG keys](#ssh-and-gpg-keys)
 - [Git setup](#git-setup)
 - [Contributor agreement](#contributor-agreement)
-- [Code style](#code-style)
 - [Integrating changes](#integrating-changes)
   + [APIs](#apis)
   + [Clients](#clients)
@@ -49,8 +49,32 @@ Some things to think about:
 
 You should be familiar with:
 
+- [CSS](https://developer.mozilla.org/en-US/docs/Learn/CSS)
+- [HTML](https://developer.mozilla.org/en-US/docs/Learn/HTML)
 - [JavaScript](http://javascript.info/)
 - [Markdown](https://blog.ghost.org/markdown/)
+- [Sass](https://sass-lang.com/)
+
+### Coding style guides
+
+Whenever you commit with `yarn run cz` the styles are automatically checked, but you can also check your files manually with the respective linter (from project root directory) – HTML being an exception.
+Refer to our existing files to see how the styles are applied in practice.
+
+- **HTML**  
+  See separate document for [HTML style guide](style-guides/html.md).
+  A linter is not being used.
+
+- **JavaScript**  
+  We use [semistandard](https://github.com/standard/semistandard) which is based on [standard](https://github.com/standard/standard/blob/master/docs/RULES-en.md) and adds semicolons to the rules.
+  Check manually with `yarn run js-lint`.
+
+- **Markdown**  
+  See separate document for [Markdown style guide](style-guides/markdown.md).
+  Check manually with `yarn run md-lint`.
+
+- **SCSS**  
+  See separate document for [SCSS style guide](style-guides/scss.md).
+  Check manually with `yarn run sass-lint` (not available in repositories without style sheets).
 
 ## SSH and GPG keys
 
@@ -106,25 +130,16 @@ Before we can accept your contributions, we need you to sign our contributor agr
 
 - If you're making contributions on behalf of your employer, please sign the [Entity Contributor Agreement](legal/entity-caa.md).
 
-- If neither you nor your employer owns the copyright to your contributions, please submit an issue or get in touch with us at <e-mail@stieben.de>.
+- If neither you nor your employer owns the copyright to your contributions, please submit an issue or get in touch with us at <legal@peerhaven.net>.
 
 To sign the agreement, simply add yourself to the list of signees; the list is alphabetically sorted by GitHub username.
 As your commits are signed with your GPG key, this addition counts as an electronic signature.
 Do not alter the lines of other signees.
 
-## Code style
-
-Whenever you commit with `yarn run cz` the styles are automatically checked, but you can also check your files manually (from project root directory).
-
-- **JavaScript**  
-  We use [semistandard](https://github.com/standard/semistandard) which is based on [standard](https://github.com/standard/standard/blob/master/docs/RULES-en.md) and adds semicolons to the rules.
-  Check manually with `yarn run js-lint`.
-
-- **Markdown**  
-  See separate document for [Markdown code style rules](codestyle/markdown.md).
-  Check manually with `yarn run md-lint`.
-
 ## Integrating changes
+
+(Note:
+The two repositories created before 2020 – `peerhaven` and `web` – have `master` instead of `main` branches; use whichever is present.)
 
 Please submit an issue with your suggestion, especially if you're not part of the core team, before starting to work on code.
 Let's make sure your changes are actually in line with what peerhaven is trying to achieve.
@@ -133,11 +148,11 @@ Please keep code and documentation in sync and update the documentation in paral
 
 We're using the [git flow](http://nvie.com/posts/a-successful-git-branching-model/) development model introduced by Vincent Driessen in 2010.
 
-Please note that anybody with _write_ permission is supposed to push only to temporary branches (`feature`, `release` and `hotfix`); changes to `develop` and `master` branches are merged by [pull requests](https://help.github.com/articles/about-pull-requests/) after code review.
+Please note that anybody with _write_ permission is supposed to push only to temporary branches (`feature`, `release` and `hotfix`); changes to `develop` and `main` branches are merged by [pull requests](https://help.github.com/articles/about-pull-requests/) after code review.
 To avoid unverified merge commits (which happen if you merge via the GitHub web app) ([example](https://github.com/peerhaven/peerhaven/commit/60f1f6f6e2fc804d6761454fe6d8e79916c74802)), merge via the command line:
 
 ```bash
-git checkout master # or develop
+git checkout main # or develop
 git merge --no-ff <temporary branch name>
 # chore: merge pull request #<no.> from <temporary branch name>
 git push
@@ -146,7 +161,7 @@ git push
 Then delete the temporary branch both locally and on GitHub.
 
 If you happen to have conflicts in a pull request, resolving those from the web app results in a verified merge commit but creates a commit message that doesn't comply with our guideline ([example](https://github.com/peerhaven/web/commit/445f6b9d65d4c53e92df10b74b29b0e9187401f9)).
-Therefore, merge `develop`/`master` into your temporary branch from within your Git client and resolve the conflicts there.
+Therefore, merge `develop`/`main` into your temporary branch from within your Git client and resolve the conflicts there.
 
 Temporary branches have hierarchical names; examples are:
 
@@ -164,21 +179,21 @@ We are going to have 3 different types of repositories, resulting in 3 slightly 
 
 Having a coherent codebase and being presumably ready to ship, a `release` branch is created from the `develop` branch, the version number following the principles of [semantic versioning 2.0.0](https://semver.org/).
 Until incorporating [feature flags](https://readwrite.com/2016/01/22/staging-servers/), the code in the newly created `release` branch is being tested internally in a staging environment, usually for a week.
-When code gets merged into `master`, we push the code into our production system.
+When code gets merged into `main`, we push the code into our production system.
 From this point on, a new `release` branch may be created.
 
 ### Clients
 
 [Semantic versioning doesn't make much sense for apps without a public API](https://grimoire.ca/dev/webapp-versions), like our web app.
 So releases are named by date instead:
-`release/2018-07-21` (date of planned merge into master).
+`release/2018-07-21` (date of planned merge into main).
 That's the only difference compared to repositories containing APIs.
 
 ### Documentation
 
 Repositories without code, like this one, have a drastically simplified workflow.
-They have no versions and only `master` has an infinite lifetime.
-Commits go into temporary `build` or `content` branches, like `content/add-code-of-conduct`, and are merged into `master` by pull requests.
+They have no versions and only `main` has an infinite lifetime.
+Commits go into temporary `build` or `content` branches, like `content/add-code-of-conduct`, and are merged into `main` by pull requests.
 
 ## Commit message guideline
 
@@ -265,3 +280,13 @@ yarn run cz
 
 Commitizen will ask you several questions and generate a valid commit message for you.
 Still, it helps if you have read our guideline at least once.
+
+---
+
+For questions / discussion, refer to these issues:
+
+- [#1 Pick a license](https://github.com/peerhaven/peerhaven/issues/1)
+- [#4 Create contributing guideline](https://github.com/peerhaven/peerhaven/issues/4)
+- [#5 Add Commitizen](https://github.com/peerhaven/peerhaven/issues/5)
+- [#6 Create or reference commit message guideline](https://github.com/peerhaven/peerhaven/issues/6)
+- [#10 Optimize merge process](https://github.com/peerhaven/peerhaven/issues/10)
