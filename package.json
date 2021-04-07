@@ -8,16 +8,16 @@
     }
   },
   "devDependencies": {
-    "commitizen": "^4.0.4",
-    "cz-customizable": "^6.2.0",
-    "markdownlint-cli": "^0.22.0",
-    "semistandard": "^14.2.0",
-    "snazzy": "^8.0.0"
+    "commitizen": "^4.2.3",
+    "cz-customizable": "^6.3.0",
+    "markdownlint-cli": "^0.27.1",
+    "semistandard": "^16.0.0",
+    "snazzy": "^9.0.0"
   },
   "license": "SEE LICENSE IN LICENSE.md",
   "name": "@peerhaven/peerhaven",
   "optionalDependencies": {
-    "covgen": "^3.1.2"
+    "covgen": "^3.2.0"
   },
   "repository": {
     "type": "git",
@@ -29,5 +29,5 @@
     "md-lint": "markdownlint '**/*.md'",
     "js-lint": "semistandard --verbose | snazzy"
   },
-  "version": "1.1.0"
+  "version": "1.1.1"
 }
