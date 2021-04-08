@@ -17,7 +17,8 @@
   "license": "SEE LICENSE IN LICENSE.md",
   "name": "@peerhaven/peerhaven",
   "optionalDependencies": {
-    "covgen": "^3.2.0"
+    "covgen": "^3.2.0",
+    "license-checker": "^25.0.1"
   },
   "repository": {
     "type": "git",
