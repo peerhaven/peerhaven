@@ -1,4 +1,9 @@
 {
+  "author": "Andrej Stieben (https://github.com/stieben)",
+  "bugs": {
+    "email" : "bugs@peerhaven.net",
+    "url" : "https://github.com/peerhaven/peerhaven/issues"
+  },
   "config": {
     "commitizen": {
       "path": "cz-customizable"
@@ -7,6 +12,7 @@
       "config": ".cz-config.js"
     }
   },
+  "description": "The main peerhaven documentation package",
   "devDependencies": {
     "commitizen": "^4.2.3",
     "cz-customizable": "^6.3.0",
@@ -14,6 +20,7 @@
     "semistandard": "^16.0.0",
     "snazzy": "^9.0.0"
   },
+  "homepage": "https://peerhaven.net",
   "license": "SEE LICENSE IN LICENSE.md",
   "name": "@peerhaven/peerhaven",
   "optionalDependencies": {
@@ -25,10 +32,9 @@
     "url": "https://github.com/peerhaven/peerhaven.git"
   },
   "scripts": {
-    "covgen": "covgen",
     "cz": "semistandard && markdownlint '**/*.md' && git add . && git-cz",
-    "md-lint": "markdownlint '**/*.md'",
-    "js-lint": "semistandard --verbose | snazzy"
+    "lint-js": "semistandard --verbose | snazzy",
+    "lint-md": "markdownlint '**/*.md'"
   },
   "version": "1.1.1"
 }
