@@ -130,6 +130,7 @@ This is the place where we would like to give credit.
 - Repository badges generated with [Shields.io](http://shields.io/):
   + _License: Fair Source 5_
   + _Contributions welcome_
+  + _Contributor Covenant 2.0_
   + _Code style: semistandard_
   + _Commitizen friendly_
 - SSL certificate provided by [Let's Encrypt](https://letsencrypt.org/)
