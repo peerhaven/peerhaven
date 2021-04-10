@@ -1,0 +1,2 @@
+# Lint hidden files as well (they are ignored with standard configuration)
+!.*

@@ -1,6 +1,6 @@
 # Setup
 
-This is a beginner friendly guide for setting up everything necessary to work on peerhaven.
+This aims to be a beginner friendly guide for setting up everything necessary to work on peerhaven.
 If parts of this guide don't work for your system, let us know by [submitting an issue](CONTRIBUTING.md#submitting-issues)!
 
 ## Contents
@@ -28,3 +28,10 @@ Instead, it is recommended to install Node with the latest version of [nvm](http
 ```bash
 yarn install
 ```
+
+#### Upgrading dependencies
+
+To upgrade direct dependencies, use [`yarn upgrade`](https://classic.yarnpkg.com/en/docs/cli/upgrade/) or [`yarn upgrade-interactive`](https://classic.yarnpkg.com/en/docs/cli/upgrade-interactive) (optionally with the `--latest` tag).
+Upgraded dependencies should be tested before being pushed.
+
+To upgrade sub dependencies as well, delete the `node_modules` folder and the `yarn.lock` file and perform a fresh install with [`yarn install`](https://classic.yarnpkg.com/en/docs/cli/install).

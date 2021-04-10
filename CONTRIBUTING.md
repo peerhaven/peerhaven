@@ -66,11 +66,11 @@ Refer to our existing files to see how the styles are applied in practice.
 
 - **JavaScript**  
   We use [semistandard](https://github.com/standard/semistandard) which is based on [standard](https://github.com/standard/standard/blob/master/docs/RULES-en.md) and adds semicolons to the rules.
-  Check manually with `yarn run js-lint`.
+  Check manually with `yarn run lint-js`.
 
 - **Markdown**  
   See separate document for [Markdown style guide](style-guides/markdown.md).
-  Check manually with `yarn run md-lint`.
+  Check manually with `yarn run lint-md`.
 
 - **SCSS**  
   See separate document for [SCSS style guide](style-guides/scss.md).

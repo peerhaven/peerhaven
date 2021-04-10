@@ -85,6 +85,7 @@ This is the place where we would like to give credit.
 
 ## Resources
 
+- Alexis King: [Understanding the npm dependency model](https://lexi-lambda.github.io/blog/2016/08/24/understanding-the-npm-dependency-model/)
 - [Atlassian Git Tutorials](https://www.atlassian.com/git/tutorials)
 - [CSS-Tricks](https://css-tricks.com/)
 - [HEAD](https://gethead.info/), a guide to `<head>` elements
