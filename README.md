@@ -13,10 +13,7 @@ peerhaven is going to be a place for journaling, but we're not there, yet.
 ## Contents
 
 - [Architecture](#architecture)
-- [Getting started](#getting-started)
-- [Contributing](#contributing)
-- [Security policy](#security-policy)
-- [Colophon](#colophon)
+- [Documentation](#documentation)
 - [License](#license)
 
 ## Architecture
@@ -25,21 +22,12 @@ Our architecture is rather modular, with the different parts being separated acr
 
 - [**web**](https://github.com/peerhaven/web): Web app core
 
-## Getting started
+## Documentation
 
-We prepared a separate document for [setting up the environment](SETUP.md).
-
-## Contributing
-
-See our [guide for contributors](CONTRIBUTING.md).
-
-## Security policy
-
-See our [security policy](SECURITY.md).
-
-## Colophon
-
-See our [colophon](COLOPHON.md).
+- [Setup instructions](SETUP.md)
+- [Guide for contributors](CONTRIBUTING.md)
+- [Security policy](SECURITY.md)
+- [Colophon](COLOPHON.md)
 
 ## License
 

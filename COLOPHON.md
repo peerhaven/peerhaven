@@ -58,6 +58,7 @@ This is the place where we would like to give credit.
 - Commit message conventions with [Commitizen](http://commitizen.github.io/cz-cli/) and [cz-customizable](https://github.com/leonardoanalista/cz-customizable) adapter
 - Environment variables with [dotenv](https://github.com/motdotla/dotenv)
 - JavaScript linting with [semistandard](https://github.com/standard/semistandard), and [snazzy](https://github.com/standard/snazzy) for prettier output
+- License checking with [license-checker](https://github.com/davglass/license-checker)
 - Markdown linting with [markdownlint-cli](https://github.com/igorshubovych/markdownlint-cli)
 - Server-side rendering with [Nuxt.js](https://nuxtjs.org/)
 - Stylesheet preprocessing with [node-sass](https://github.com/sass/node-sass)
@@ -73,7 +74,7 @@ This is the place where we would like to give credit.
 - Development with [JavaScript](https://en.wikipedia.org/wiki/JavaScript)
 - Documentation with [Markdown](https://daringfireball.net/projects/markdown/)
 - Markup with [HTML](https://en.wikipedia.org/wiki/HTML) and [XML](https://en.wikipedia.org/wiki/XML)
-- Styling with [CSS](https://en.wikipedia.org/wiki/Cascading_Style_Sheets); preprocessing with [Sass](https://sass-lang.com/)
+- Styling with [CSS](https://en.wikipedia.org/wiki/Cascading_Style_Sheets); preprocessing with [SCSS](https://sass-lang.com/)
 - Vector graphics with [SVG](https://en.wikipedia.org/wiki/Scalable_Vector_Graphics)
 
 ## Legal

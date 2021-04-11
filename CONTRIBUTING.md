@@ -11,16 +11,18 @@ By participating in this project you agree to abide by its terms.
 
 ## Contents
 
-- [Submitting issues](#submitting-issues)
+- [Non-technical contributions](#non-technical-contributions)
+  + [Discussions](#discussions)
+  + [Issues](#issues)
 - [Languages](#languages)
   + [Coding style guides](#coding-style-guides)
 - [SSH and GPG keys](#ssh-and-gpg-keys)
 - [Git setup](#git-setup)
 - [Contributor agreement](#contributor-agreement)
 - [Integrating changes](#integrating-changes)
-  + [APIs](#apis)
-  + [Clients](#clients)
+  + [Code](#code)
   + [Documentation](#documentation)
+- [Upgrading dependencies](#upgrading-dependencies)
 - [Commit message guideline](#commit-message-guideline)
   + [Format](#format)
   + [Revert](#revert)
@@ -31,50 +33,57 @@ By participating in this project you agree to abide by its terms.
   + [Footer](#footer)
   + [tl;dr](#tldr)
 
-## Submitting issues
+## Non-technical contributions
 
-Please take your time opening an issue, to help us respond to it in the most efficient way possible.
-Some things to think about:
+You don't have to be a software developer to make a valuable contribution – discussions and issues are an easy and legitimate way for improvement.
 
-- Is the issue related to a specific piece of software, like the web app or our API?
-  Then open the issue in the corresponding repository.
-  If not, the general `peerhaven` repository is a good place.
-- Please check open issues to avoid duplicates.
-  If you found an existing issue, vote or comment to raise awareness and show your interest.
-- If submitting a bug report, please provide the steps to reproduce the problem.
-  Describe what's the expected and the actual behaviour.
-- Suggestions concerning our workflow, tools and standards are welcome!
+Is your feedback related to a specific piece of software, like the desktop app or a browser extension?
+Then check the corresponding repository (see the README for a [list of our modules](README.md#architecture)).
+If not, the general `peerhaven` repository (the one you're currently looking at) is a good place to start.
+
+### Discussions
+
+For questions, ideas and general feedback, have a look at our discussions pages.
+If you don't find an existing discussion related to your matter, feel free to open a new discussion.
+Suggestions concerning our workflow, tools and standards are welcome!
+
+### Issues
+
+For any problems you encounter, head over to our issues pages.
+Please check existing issues to avoid creating duplicates – if you find one related to your problem, vote (with an emoji) or comment to raise awareness and show your interest.
+When submitting a new bug report, please provide the steps to reproduce the problem; describe what's the expected and the actual behaviour.
 
 ## Languages
 
-You should be familiar with:
+We use the following (technical) languages throughout the project:
 
-- [CSS](https://developer.mozilla.org/en-US/docs/Learn/CSS)
+- [CSS](https://developer.mozilla.org/en-US/docs/Learn/CSS) / [SCSS](https://sass-lang.com/)
 - [HTML](https://developer.mozilla.org/en-US/docs/Learn/HTML)
 - [JavaScript](http://javascript.info/)
 - [Markdown](https://blog.ghost.org/markdown/)
-- [Sass](https://sass-lang.com/)
+
+It's highly recommended that you make yourself familiar with them, depending on the parts of the project you're interested to work on.
 
 ### Coding style guides
 
-Whenever you commit with `yarn run cz` the styles are automatically checked, but you can also check your files manually with the respective linter (from project root directory) – HTML being an exception.
+Whenever you commit with `yarn run cz` (see [tl;dr](#tldr) below) the styles are automatically checked, but you can also check your files manually with the respective linter (from project root directory) – HTML being an exception.
 Refer to our existing files to see how the styles are applied in practice.
+
+- **CSS** / **SCSS**  
+  See separate document for [SCSS style guide](style-guides/scss.md).
+  Check manually with `yarn run lint-scss` (not available in repositories without style sheets).
 
 - **HTML**  
   See separate document for [HTML style guide](style-guides/html.md).
-  A linter is not being used.
+  A linter is not being used at the moment.
 
 - **JavaScript**  
-  We use [semistandard](https://github.com/standard/semistandard) which is based on [standard](https://github.com/standard/standard/blob/master/docs/RULES-en.md) and adds semicolons to the rules.
+  We use [semistandard](https://github.com/standard/semistandard) which is based on [standard](https://github.com/standard/standard/blob/master/docs/RULES-en.md) and adds semicolons to its rules.
   Check manually with `yarn run lint-js`.
 
 - **Markdown**  
   See separate document for [Markdown style guide](style-guides/markdown.md).
   Check manually with `yarn run lint-md`.
-
-- **SCSS**  
-  See separate document for [SCSS style guide](style-guides/scss.md).
-  Check manually with `yarn run sass-lint` (not available in repositories without style sheets).
 
 ## SSH and GPG keys
 
@@ -173,27 +182,28 @@ If a branch is connected to an existing issue it should be referenced like this:
 
 `feature/#22-create-user-component`
 
-We are going to have 3 different types of repositories, resulting in 3 slightly varying workflows.
+We are going to have 2 different types of repositories, resulting in 2 varying workflows.
 
-### APIs
+### Code
 
 Having a coherent codebase and being presumably ready to ship, a `release` branch is created from the `develop` branch, the version number following the principles of [semantic versioning 2.0.0](https://semver.org/).
-Until incorporating [feature flags](https://readwrite.com/2016/01/22/staging-servers/), the code in the newly created `release` branch is being tested internally in a staging environment, usually for a week.
+Until incorporating [feature flags](https://readwrite.com/2016/01/22/staging-servers/), the code in the newly created `release` branch is being tested internally in a staging environment.
 When code gets merged into `main`, we push the code into our production system.
 From this point on, a new `release` branch may be created.
-
-### Clients
-
-[Semantic versioning doesn't make much sense for apps without a public API](https://grimoire.ca/dev/webapp-versions), like our web app.
-So releases are named by date instead:
-`release/2018-07-21` (date of planned merge into main).
-That's the only difference compared to repositories containing APIs.
 
 ### Documentation
 
 Repositories without code, like this one, have a drastically simplified workflow.
 They have no versions and only `main` has an infinite lifetime.
 Commits go into temporary `build` or `content` branches, like `content/add-code-of-conduct`, and are merged into `main` by pull requests.
+
+## Upgrading dependencies
+
+To upgrade direct dependencies, use [`yarn upgrade`](https://classic.yarnpkg.com/en/docs/cli/upgrade/) or [`yarn upgrade-interactive`](https://classic.yarnpkg.com/en/docs/cli/upgrade-interactive) (optionally with the `--latest` tag).
+
+To upgrade sub dependencies as well, delete the `node_modules` folder and the `yarn.lock` file and perform a fresh install with [`yarn install`](https://classic.yarnpkg.com/en/docs/cli/install).
+
+Upgraded dependencies should be tested before being pushed.
 
 ## Commit message guideline
 
