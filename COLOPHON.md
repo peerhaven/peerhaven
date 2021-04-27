@@ -1,6 +1,6 @@
 # Colophon
 
-peerhaven is created and maintained by [Andrej Stieben](https://github.com/stieben).
+Peerhaven is created and maintained by [Andrej Stieben](https://github.com/stieben).
 
 The whole project could not be possible without a lot of other people's work.
 This is the place where we would like to give credit.

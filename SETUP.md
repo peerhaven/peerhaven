@@ -1,6 +1,6 @@
 # Setup
 
-This aims to be a beginner friendly guide for setting up everything necessary to run (and work on) peerhaven.
+This aims to be a beginner friendly guide for setting up everything necessary to run (and work on) Peerhaven.
 If parts of this guide don't work for your system, let us know by [submitting an issue](CONTRIBUTING.md#non-technical-contributions)!
 
 ## Contents
@@ -14,7 +14,7 @@ If parts of this guide don't work for your system, let us know by [submitting an
 To get started, download or clone the respective repository's project files.
 
 **Note**:
-This very repository is not needed for running peerhaven.
+This very repository is not needed for running Peerhaven.
 
 ## Node.js
 
@@ -25,8 +25,9 @@ Instead, we recommend to install Node with the latest version of [nvm](https://g
 ### Yarn
 
 To interact with npm and its packages, we use [Yarn Classic](https://classic.yarnpkg.com/en/docs/getting-started); you should install that as well.
-Install all dependencies from the project root directory:
+Then install the necessary dependencies from the project root directory:
 
 ```bash
-yarn install
+yarn        # all dependencies (developing Peerhaven)
+yarn --prod # production only     (running Peerhaven)
 ```

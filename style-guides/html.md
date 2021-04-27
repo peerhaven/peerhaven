@@ -49,7 +49,7 @@ In general, we try to be as close to well-formed XML as possible.
 ## Alignment of attributes
 
 ```html
-<img alt="peerhaven"
+<img alt="Peerhaven"
      id="peerhaven-logo"
      src="img/peerhaven-logo.png" />
 ```

@@ -9,6 +9,6 @@
   "no-bare-urls": false,
   "no-duplicate-heading": {"siblings_only": true},
   "no-trailing-punctuation": {"punctuation": ".,;:"},
-  "proper-names": {"names": ["JavaScript", "Markdown", "peerhaven"]},
+  "proper-names": {"names": ["JavaScript", "Markdown"]},
   "ul-style": {"style": "sublist"}
 }

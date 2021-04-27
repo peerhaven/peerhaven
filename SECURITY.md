@@ -2,7 +2,7 @@
 
 ## Supported versions
 
-The following versions of the peerhaven ecosystem are currently being supported with security updates:
+The following versions of the Peerhaven ecosystem are currently being supported with security updates:
 
 | Package   | Version | Supported |
 | :-------- | :------ | :-------- |

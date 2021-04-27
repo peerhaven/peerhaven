@@ -1,8 +1,8 @@
 # How to contribute
 
-We develop peerhaven in the open because we want to be a transparent platform and provide an easy way to integrate your bug fixes and improvements.
+We develop Peerhaven in the open because we want to be a transparent platform and provide an easy way to integrate your bug fixes and improvements.
 Community contributions are helpful and very welcome.
-This document describes how you can take part in improving peerhaven.
+This document describes how you can take part in improving Peerhaven.
 
 If you haven't done this kind of thing before, read GitHub's guide about [how to contribute to open source](https://opensource.guide/how-to-contribute/) in general (for a non-technical overview), and then check out the free Egghead video course about [how to contribute to an open source project on GitHub](https://egghead.io/courses/how-to-contribute-to-an-open-source-project-on-github) (for a more technical introduction).
 
@@ -66,31 +66,22 @@ It's highly recommended that you make yourself familiar with them, depending on 
 
 ### Coding style guides
 
-Whenever you commit with `yarn run cz` (see [tl;dr](#tldr) below) the styles are automatically checked, but you can also check your files manually with the respective linter (from project root directory) – HTML being an exception.
+Whenever you commit with `yarn commit` (see [tl;dr](#tldr) below) the styles are automatically checked, but you can also check your files manually with the respective linter (from project root directory) – HTML being an exception.
 Refer to our existing files to see how the styles are applied in practice.
 
-- **CSS** / **SCSS**  
-  See separate document for [SCSS style guide](style-guides/scss.md).
-  Check manually with `yarn run lint-scss` (not available in repositories without style sheets).
+One thing all files have in common is ordering – whenever there's no specific order required we appreciate alphanumeric ordering.
 
-- **HTML**  
-  See separate document for [HTML style guide](style-guides/html.md).
-  A linter is not being used at the moment.
-
-- **JavaScript**  
-  We use [semistandard](https://github.com/standard/semistandard) which is based on [standard](https://github.com/standard/standard/blob/master/docs/RULES-en.md) and adds semicolons to its rules.
-  Check manually with `yarn run lint-js`.
-
-- **Markdown**  
-  See separate document for [Markdown style guide](style-guides/markdown.md).
-  Check manually with `yarn run lint-md`.
+- [CSS / SCSS](style-guides/scss.md) `yarn lint:scss` (not available in repositories without style sheets)
+- [HTML](style-guides/html.md) (a linter is not being used at the moment)
+- JavaScript `yarn lint:js` (we use [semistandard](https://github.com/standard/semistandard) which is based on [standard](https://github.com/standard/standard/blob/master/docs/RULES-en.md) and adds semicolons to its rules)
+- [Markdown](style-guides/markdown.md) `yarn lint:md`
 
 ## SSH and GPG keys
 
 Create [SSH](https://help.github.com/en/github/authenticating-to-github/connecting-to-github-with-ssh) (for accessing GitHub) and [GPG](https://help.github.com/en/github/authenticating-to-github/managing-commit-signature-verification) (for signing your commits) keys and secure them with a passphrase each.
 [Then add the keys to your GitHub account](https://github.com/settings/keys).
 
-The public key of every new GPG key pair you use for committing to any of peerhaven's repositories shall be added to the `keys` folder in the format of `USER.KEY_ID.pub`, where `USER` is your GitHub username and `KEY_ID` is the 16-digit identifier of your public key.
+The public key of every new GPG key pair you use for committing to any of Peerhaven's repositories shall be added to the `keys` folder in the format of `USER.KEY_ID.pub`, where `USER` is your GitHub username and `KEY_ID` is the 16-digit identifier of your public key.
 
 Show a list of existing key pairs:
 
@@ -151,11 +142,11 @@ Do not alter the lines of other signees.
 The two repositories created before 2020 – `peerhaven` and `web` – have `master` instead of `main` branches; use whichever is present.)
 
 Please submit an issue with your suggestion, especially if you're not part of the core team, before starting to work on code.
-Let's make sure your changes are actually in line with what peerhaven is trying to achieve.
+Let's make sure your changes are actually in line with what Peerhaven is trying to achieve.
 Also, check open pull requests.
 Please keep code and documentation in sync and update the documentation in parallel.
 
-We're using the [git flow](http://nvie.com/posts/a-successful-git-branching-model/) development model introduced by Vincent Driessen in 2010.
+We use the [git flow](http://nvie.com/posts/a-successful-git-branching-model/) development model introduced by Vincent Driessen in 2010.
 
 Please note that anybody with _write_ permission is supposed to push only to temporary branches (`feature`, `release` and `hotfix`); changes to `develop` and `main` branches are merged by [pull requests](https://help.github.com/articles/about-pull-requests/) after code review.
 To avoid unverified merge commits (which happen if you merge via the GitHub web app) ([example](https://github.com/peerhaven/peerhaven/commit/60f1f6f6e2fc804d6761454fe6d8e79916c74802)), merge via the command line:
@@ -182,12 +173,12 @@ If a branch is connected to an existing issue it should be referenced like this:
 
 `feature/#22-create-user-component`
 
-We are going to have 2 different types of repositories, resulting in 2 varying workflows.
+We have 2 different types of repositories, resulting in 2 varying workflows.
 
 ### Code
 
 Having a coherent codebase and being presumably ready to ship, a `release` branch is created from the `develop` branch, the version number following the principles of [semantic versioning 2.0.0](https://semver.org/).
-Until incorporating [feature flags](https://readwrite.com/2016/01/22/staging-servers/), the code in the newly created `release` branch is being tested internally in a staging environment.
+Until incorporating [feature flags](https://readwrite.com/2016/01/22/staging-servers/), the code in the newly created `release` branch is being tested internally in a staging environment (we prefer stability over moving fast).
 When code gets merged into `main`, we push the code into our production system.
 From this point on, a new `release` branch may be created.
 
@@ -201,7 +192,7 @@ Commits go into temporary `build` or `content` branches, like `content/add-code-
 
 To upgrade direct dependencies, use [`yarn upgrade`](https://classic.yarnpkg.com/en/docs/cli/upgrade/) or [`yarn upgrade-interactive`](https://classic.yarnpkg.com/en/docs/cli/upgrade-interactive) (optionally with the `--latest` tag).
 
-To upgrade sub dependencies as well, delete the `node_modules` folder and the `yarn.lock` file and perform a fresh install with [`yarn install`](https://classic.yarnpkg.com/en/docs/cli/install).
+To upgrade sub dependencies as well, delete the `node_modules` folder and the `yarn.lock` file and perform a fresh install with [`yarn`](https://classic.yarnpkg.com/en/docs/cli/install).
 
 Upgraded dependencies should be tested before being pushed.
 
@@ -285,7 +276,7 @@ To help you play by our rules, we set up [Commitizen](http://commitizen.github.i
 Once you're ready to commit, just run:
 
 ```bash
-yarn run cz
+yarn commit
 ```
 
 Commitizen will ask you several questions and generate a valid commit message for you.
