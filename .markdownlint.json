@@ -1,14 +1,21 @@
 {
-  "code-block-style": {"style": "fenced"},
-  "code-fence-style": {"style": "backtick"},
+  "code-block-style": { "style": "fenced" },
+  "code-fence-style": { "style": "backtick" },
   "fenced-code-language": false,
   "first-line-heading": false,
-  "heading-style": {"style": "atx"},
-  "hr-style": {"style": "---"},
+  "heading-style": { "style": "atx" },
+  "hr-style": { "style": "---" },
   "line-length": false,
   "no-bare-urls": false,
-  "no-duplicate-heading": {"siblings_only": true},
-  "no-trailing-punctuation": {"punctuation": ".,;:"},
-  "proper-names": {"names": ["JavaScript", "Markdown"]},
-  "ul-style": {"style": "sublist"}
+  "no-duplicate-heading": { "siblings_only": true },
+  "no-trailing-punctuation": { "punctuation": ".,;:" },
+
+  "proper-names": {
+    "names": [
+      "JavaScript",
+      "Markdown"
+    ]
+  },
+
+  "ul-style": { "style": "sublist" }
 }

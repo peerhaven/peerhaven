@@ -1,7 +1,11 @@
-'use strict';
-
 module.exports = {
-  allowBreakingChanges: ['feat', 'fix', 'revert', 'wip'],
+  allowBreakingChanges: [
+    'feat',
+    'fix',
+    'revert',
+    'wip'
+  ],
+
   allowCustomScopes: true,
   footerPrefix: '>',
 
