@@ -94,7 +94,8 @@ If you have contributed to any of the following – you have our gratitude!
 
 ### Articles
 
-- Alexis King: [Understanding the npm dependency model](https://lexi-lambda.github.io/blog/2016/08/24/understanding-the-npm-dependency-model/)
+- Alexis King:
+  [Understanding the npm dependency model](https://lexi-lambda.github.io/blog/2016/08/24/understanding-the-npm-dependency-model/)
 
 ### General
 
@@ -103,11 +104,16 @@ If you have contributed to any of the following – you have our gratitude!
 
 ### Guidelines
 
-- Airbnb: [JavaScript Style Guide](https://github.com/airbnb/javascript)
-- Elsewhen: [Project Guidelines](https://github.com/elsewhencode/project-guidelines)
-- Harry Roberts: [CSS Guidelines](https://cssguidelin.es/)
-- Kitty Giraudel: [Sass Guidelines](https://sass-guidelin.es/)
-- Ryan Sechrest: [HTML Style Guide](https://gist.github.com/ryansechrest/8693303)
+- Airbnb:
+  [JavaScript Style Guide](https://github.com/airbnb/javascript)
+- Elsewhen:
+  [Project Guidelines](https://github.com/elsewhencode/project-guidelines)
+- Harry Roberts:
+  [CSS Guidelines](https://cssguidelin.es/)
+- Kitty Giraudel:
+  [Sass Guidelines](https://sass-guidelin.es/)
+- Ryan Sechrest:
+  [HTML Style Guide](https://gist.github.com/ryansechrest/8693303)
 
 ### Security
 
