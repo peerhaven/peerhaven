@@ -9,7 +9,6 @@ In general, we try to be as close to well-formed XML as possible.
 - [Indentation of multi-line comments](#indentation-of-multi-line-comments)
 - [Indentation of child elements of body](#indentation-of-child-elements-of-body)
 - [Closing of void elements](#closing-of-void-elements)
-- [Alignment of attributes](#alignment-of-attributes)
 
 ## Indentation with 2 spaces
 
@@ -42,16 +41,11 @@ In general, we try to be as close to well-formed XML as possible.
 ## Closing of void elements
 
 ```html
-<link href="theme.css" rel="stylesheet" />
+<link
+  href="theme.css"
+  rel="stylesheet"
+/>
 <br />
-```
-
-## Alignment of attributes
-
-```html
-<img alt="peerhaven"
-     id="peerhaven-logo"
-     src="img/peerhaven-logo.png" />
 ```
 
 ---

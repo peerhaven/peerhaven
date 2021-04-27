@@ -77,7 +77,7 @@ Allowed if they're not siblings
 ### MD044
 
 **Proper names should have the correct capitalization**:
-JavaScript, peerhaven, ...
+JavaScript, Markdown, ...
 
 ### MD046
 

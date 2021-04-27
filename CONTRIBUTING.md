@@ -1,8 +1,8 @@
 # How to contribute
 
-We develop peerhaven in the open because we want to be a transparent platform and provide an easy way to integrate your bug fixes and improvements.
+We develop Peerhaven in the open because we want to be a transparent platform and provide an easy way to integrate your bug fixes and improvements.
 Community contributions are helpful and very welcome.
-This document describes how you can take part in improving peerhaven.
+This document describes how you can take part in improving Peerhaven.
 
 If you haven't done this kind of thing before, read GitHub's guide about [how to contribute to open source](https://opensource.guide/how-to-contribute/) in general (for a non-technical overview), and then check out the free Egghead video course about [how to contribute to an open source project on GitHub](https://egghead.io/courses/how-to-contribute-to-an-open-source-project-on-github) (for a more technical introduction).
 
@@ -11,16 +11,18 @@ By participating in this project you agree to abide by its terms.
 
 ## Contents
 
-- [Submitting issues](#submitting-issues)
+- [Non-technical contributions](#non-technical-contributions)
+  + [Discussions](#discussions)
+  + [Issues](#issues)
 - [Languages](#languages)
   + [Coding style guides](#coding-style-guides)
 - [SSH and GPG keys](#ssh-and-gpg-keys)
 - [Git setup](#git-setup)
 - [Contributor agreement](#contributor-agreement)
 - [Integrating changes](#integrating-changes)
-  + [APIs](#apis)
-  + [Clients](#clients)
+  + [Code](#code)
   + [Documentation](#documentation)
+- [Upgrading dependencies](#upgrading-dependencies)
 - [Commit message guideline](#commit-message-guideline)
   + [Format](#format)
   + [Revert](#revert)
@@ -31,57 +33,55 @@ By participating in this project you agree to abide by its terms.
   + [Footer](#footer)
   + [tl;dr](#tldr)
 
-## Submitting issues
+## Non-technical contributions
 
-Please take your time opening an issue, to help us respond to it in the most efficient way possible.
-Some things to think about:
+You don't have to be a software developer to make a valuable contribution – discussions and issues are an easy and legitimate way for improvement.
 
-- Is the issue related to a specific piece of software, like the web app or our API?
-  Then open the issue in the corresponding repository.
-  If not, the general `peerhaven` repository is a good place.
-- Please check open issues to avoid duplicates.
-  If you found an existing issue, vote or comment to raise awareness and show your interest.
-- If submitting a bug report, please provide the steps to reproduce the problem.
-  Describe what's the expected and the actual behaviour.
-- Suggestions concerning our workflow, tools and standards are welcome!
+Is your feedback related to a specific piece of software, like the desktop app or a browser extension?
+Then check the corresponding repository (see the README for a [list of our modules](README.md#architecture)).
+If not, the general `peerhaven` repository (the one you're currently looking at) is a good place to start.
+
+### Discussions
+
+For questions, ideas and general feedback, have a look at our discussions pages.
+If you don't find an existing discussion related to your matter, feel free to open a new discussion.
+Suggestions concerning our workflow, tools and standards are welcome!
+
+### Issues
+
+For any problems you encounter, head over to our issues pages.
+Please check existing issues to avoid creating duplicates – if you find one related to your problem, vote (with an emoji) or comment to raise awareness and show your interest.
+When submitting a new bug report, please provide the steps to reproduce the problem; describe what's the expected and the actual behaviour.
 
 ## Languages
 
-You should be familiar with:
+We use the following (technical) languages throughout the project:
 
-- [CSS](https://developer.mozilla.org/en-US/docs/Learn/CSS)
+- [CSS](https://developer.mozilla.org/en-US/docs/Learn/CSS) / [SCSS](https://sass-lang.com/)
 - [HTML](https://developer.mozilla.org/en-US/docs/Learn/HTML)
 - [JavaScript](http://javascript.info/)
 - [Markdown](https://blog.ghost.org/markdown/)
-- [Sass](https://sass-lang.com/)
+
+It's highly recommended that you make yourself familiar with them, depending on the parts of the project you're interested to work on.
 
 ### Coding style guides
 
-Whenever you commit with `yarn run cz` the styles are automatically checked, but you can also check your files manually with the respective linter (from project root directory) – HTML being an exception.
+Whenever you commit with `yarn commit` (see [tl;dr](#tldr) below) the styles are automatically checked, but you can also check your files manually with the respective linter (from project root directory) – HTML being an exception.
 Refer to our existing files to see how the styles are applied in practice.
 
-- **HTML**  
-  See separate document for [HTML style guide](style-guides/html.md).
-  A linter is not being used.
+One thing all files have in common is ordering – whenever there's no specific order required we appreciate alphanumeric ordering.
 
-- **JavaScript**  
-  We use [semistandard](https://github.com/standard/semistandard) which is based on [standard](https://github.com/standard/standard/blob/master/docs/RULES-en.md) and adds semicolons to the rules.
-  Check manually with `yarn run lint-js`.
-
-- **Markdown**  
-  See separate document for [Markdown style guide](style-guides/markdown.md).
-  Check manually with `yarn run lint-md`.
-
-- **SCSS**  
-  See separate document for [SCSS style guide](style-guides/scss.md).
-  Check manually with `yarn run sass-lint` (not available in repositories without style sheets).
+- [CSS / SCSS](style-guides/scss.md) `yarn lint:scss` (not available in repositories without style sheets)
+- [HTML](style-guides/html.md) (no linter available for now)
+- [JavaScript](style-guides/js.md) `yarn lint:js`
+- [Markdown](style-guides/markdown.md) `yarn lint:md`
 
 ## SSH and GPG keys
 
 Create [SSH](https://help.github.com/en/github/authenticating-to-github/connecting-to-github-with-ssh) (for accessing GitHub) and [GPG](https://help.github.com/en/github/authenticating-to-github/managing-commit-signature-verification) (for signing your commits) keys and secure them with a passphrase each.
 [Then add the keys to your GitHub account](https://github.com/settings/keys).
 
-The public key of every new GPG key pair you use for committing to any of peerhaven's repositories shall be added to the `keys` folder in the format of `USER.KEY_ID.pub`, where `USER` is your GitHub username and `KEY_ID` is the 16-digit identifier of your public key.
+The public key of every new GPG key pair you use for committing to any of Peerhaven's repositories shall be added to the `keys` folder in the format of `USER.KEY_ID.pub`, where `USER` is your GitHub username and `KEY_ID` is the 16-digit identifier of your public key.
 
 Show a list of existing key pairs:
 
@@ -142,11 +142,11 @@ Do not alter the lines of other signees.
 The two repositories created before 2020 – `peerhaven` and `web` – have `master` instead of `main` branches; use whichever is present.)
 
 Please submit an issue with your suggestion, especially if you're not part of the core team, before starting to work on code.
-Let's make sure your changes are actually in line with what peerhaven is trying to achieve.
+Let's make sure your changes are actually in line with what Peerhaven is trying to achieve.
 Also, check open pull requests.
 Please keep code and documentation in sync and update the documentation in parallel.
 
-We're using the [git flow](http://nvie.com/posts/a-successful-git-branching-model/) development model introduced by Vincent Driessen in 2010.
+We use the [git flow](http://nvie.com/posts/a-successful-git-branching-model/) development model introduced by Vincent Driessen in 2010.
 
 Please note that anybody with _write_ permission is supposed to push only to temporary branches (`feature`, `release` and `hotfix`); changes to `develop` and `main` branches are merged by [pull requests](https://help.github.com/articles/about-pull-requests/) after code review.
 To avoid unverified merge commits (which happen if you merge via the GitHub web app) ([example](https://github.com/peerhaven/peerhaven/commit/60f1f6f6e2fc804d6761454fe6d8e79916c74802)), merge via the command line:
@@ -173,27 +173,28 @@ If a branch is connected to an existing issue it should be referenced like this:
 
 `feature/#22-create-user-component`
 
-We are going to have 3 different types of repositories, resulting in 3 slightly varying workflows.
+We have 2 different types of repositories, resulting in 2 varying workflows.
 
-### APIs
+### Code
 
 Having a coherent codebase and being presumably ready to ship, a `release` branch is created from the `develop` branch, the version number following the principles of [semantic versioning 2.0.0](https://semver.org/).
-Until incorporating [feature flags](https://readwrite.com/2016/01/22/staging-servers/), the code in the newly created `release` branch is being tested internally in a staging environment, usually for a week.
+Until incorporating [feature flags](https://readwrite.com/2016/01/22/staging-servers/), the code in the newly created `release` branch is being tested internally in a staging environment (we prefer stability over moving fast).
 When code gets merged into `main`, we push the code into our production system.
 From this point on, a new `release` branch may be created.
-
-### Clients
-
-[Semantic versioning doesn't make much sense for apps without a public API](https://grimoire.ca/dev/webapp-versions), like our web app.
-So releases are named by date instead:
-`release/2018-07-21` (date of planned merge into main).
-That's the only difference compared to repositories containing APIs.
 
 ### Documentation
 
 Repositories without code, like this one, have a drastically simplified workflow.
 They have no versions and only `main` has an infinite lifetime.
 Commits go into temporary `build` or `content` branches, like `content/add-code-of-conduct`, and are merged into `main` by pull requests.
+
+## Upgrading dependencies
+
+To upgrade direct dependencies, use [`yarn upgrade`](https://classic.yarnpkg.com/en/docs/cli/upgrade/) or [`yarn upgrade-interactive`](https://classic.yarnpkg.com/en/docs/cli/upgrade-interactive) (optionally with the `--latest` tag).
+
+To upgrade sub dependencies as well, delete the `node_modules` folder and the `yarn.lock` file and perform a fresh install with [`yarn`](https://classic.yarnpkg.com/en/docs/cli/install).
+
+Upgraded dependencies should be tested before being pushed.
 
 ## Commit message guideline
 
@@ -275,7 +276,7 @@ To help you play by our rules, we set up [Commitizen](http://commitizen.github.i
 Once you're ready to commit, just run:
 
 ```bash
-yarn run cz
+yarn commit
 ```
 
 Commitizen will ask you several questions and generate a valid commit message for you.

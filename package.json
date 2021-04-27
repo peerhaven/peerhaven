@@ -1,40 +1,57 @@
 {
   "author": "Andrej Stieben (https://github.com/stieben)",
+
   "bugs": {
-    "email" : "bugs@peerhaven.net",
-    "url" : "https://github.com/peerhaven/peerhaven/issues"
+    "email": "bugs@peerhaven.net",
+    "url": "https://github.com/peerhaven/peerhaven/issues"
   },
+
   "config": {
     "commitizen": {
       "path": "cz-customizable"
     },
+
     "cz-customizable": {
       "config": ".cz-config.js"
     }
   },
-  "description": "The main peerhaven documentation package",
+
+  "description": "The main Peerhaven documentation package",
+
   "devDependencies": {
     "commitizen": "^4.2.3",
     "cz-customizable": "^6.3.0",
-    "markdownlint-cli": "^0.27.1",
-    "semistandard": "^16.0.0",
-    "snazzy": "^9.0.0"
+
+    "eslint": "^7.25.0",
+    "eslint-config-airbnb-base": "^14.2.1",
+    "eslint-config-semistandard": "^15.0.1",
+    "eslint-config-standard": "^16.0.2",
+    "eslint-plugin-import": "^2.22.1",
+    "eslint-plugin-node": "^11.1.0",
+    "eslint-plugin-promise": "^5.1.0",
+
+    "markdownlint-cli": "^0.27.1"
   },
+
   "homepage": "https://peerhaven.net",
   "license": "SEE LICENSE IN LICENSE.md",
   "name": "@peerhaven/peerhaven",
+
   "optionalDependencies": {
     "covgen": "^3.2.0",
     "license-checker": "^25.0.1"
   },
+
   "repository": {
     "type": "git",
     "url": "https://github.com/peerhaven/peerhaven.git"
   },
+
   "scripts": {
-    "cz": "semistandard && markdownlint '**/*.md' && git add . && git-cz",
-    "lint-js": "semistandard --verbose | snazzy",
-    "lint-md": "markdownlint '**/*.md'"
+    "commit": "yarn lint:js && yarn lint:md && git add . && git-cz",
+    "lint:js": "eslint '**/*.js'",
+    "lint:md": "markdownlint '**/*.md'"
   },
-  "version": "1.1.1"
+
+  "version": "1.1.2"
 }

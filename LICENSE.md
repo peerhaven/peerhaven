@@ -2,7 +2,7 @@
 
 Copyright (C) 2018 – 2021 Andrej Stieben  
 Licensor: Andrej Stieben  
-Software: peerhaven  
+Software: Peerhaven  
 Use Limitation: 5 users
 
 **License Grant.**

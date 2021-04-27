@@ -1,7 +1,7 @@
 # Setup
 
-This aims to be a beginner friendly guide for setting up everything necessary to work on peerhaven.
-If parts of this guide don't work for your system, let us know by [submitting an issue](CONTRIBUTING.md#submitting-issues)!
+This aims to be a beginner friendly guide for setting up everything necessary to run (and work on) Peerhaven.
+If parts of this guide don't work for your system, let us know by [submitting an issue](CONTRIBUTING.md#non-technical-contributions)!
 
 ## Contents
 
@@ -14,24 +14,20 @@ If parts of this guide don't work for your system, let us know by [submitting an
 To get started, download or clone the respective repository's project files.
 
 **Note**:
-This very repository is not needed for running peerhaven.
+This very repository is not needed for running Peerhaven.
 
 ## Node.js
 
-If you install Node with the official download, you may get into permission issues.
-Instead, it is recommended to install Node with the latest version of [nvm](https://github.com/nvm-sh/nvm); this will also install npm.
+Most importantly, you need [Node.js](https://nodejs.org/).
+If you install it with the official download, you may get into permission issues.
+Instead, we recommend to install Node with the latest version of [nvm](https://github.com/nvm-sh/nvm) (_Node Version Manager_); this will also install [npm](https://docs.npmjs.com/about-npm) (_Node Package Manager_).
 
 ### Yarn
 
-[Install Yarn](https://classic.yarnpkg.com/en/docs/install) on top of npm, then install all dependencies from the project root directory:
+To interact with npm and its packages, we use [Yarn Classic](https://classic.yarnpkg.com/en/docs/getting-started); you should install that as well.
+Then install the necessary dependencies from the project root directory:
 
 ```bash
-yarn install
+yarn        # all dependencies (developing Peerhaven)
+yarn --prod # production only     (running Peerhaven)
 ```
-
-#### Upgrading dependencies
-
-To upgrade direct dependencies, use [`yarn upgrade`](https://classic.yarnpkg.com/en/docs/cli/upgrade/) or [`yarn upgrade-interactive`](https://classic.yarnpkg.com/en/docs/cli/upgrade-interactive) (optionally with the `--latest` tag).
-Upgraded dependencies should be tested before being pushed.
-
-To upgrade sub dependencies as well, delete the `node_modules` folder and the `yarn.lock` file and perform a fresh install with [`yarn install`](https://classic.yarnpkg.com/en/docs/cli/install).
