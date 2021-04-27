@@ -72,8 +72,8 @@ Refer to our existing files to see how the styles are applied in practice.
 One thing all files have in common is ordering – whenever there's no specific order required we appreciate alphanumeric ordering.
 
 - [CSS / SCSS](style-guides/scss.md) `yarn lint:scss` (not available in repositories without style sheets)
-- [HTML](style-guides/html.md) (a linter is not being used at the moment)
-- JavaScript `yarn lint:js` (we use [semistandard](https://github.com/standard/semistandard) which is based on [standard](https://github.com/standard/standard/blob/master/docs/RULES-en.md) and adds semicolons to its rules)
+- [HTML](style-guides/html.md) (no linter available for now)
+- [JavaScript](style-guides/js.md) `yarn lint:js`
 - [Markdown](style-guides/markdown.md) `yarn lint:md`
 
 ## SSH and GPG keys

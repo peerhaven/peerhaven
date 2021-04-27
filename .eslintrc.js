@@ -51,9 +51,6 @@ module.exports = {
       }
     ],
 
-    // allow in single-file components (according to HTML style guide)
-    'no-multiple-empty-lines': 'off',
-
     // operators in multiline expressions at the beginning of the line
     'operator-linebreak': [
       'error',

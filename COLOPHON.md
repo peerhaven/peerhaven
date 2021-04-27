@@ -22,7 +22,7 @@ If you have contributed to any of the following – you have our gratitude!
   + [General](#general)
   + [Guidelines](#guidelines)
   + [Security](#security)
-  + [Web design & development](#web-design-development)
+  + [Web design & development](#web-design--development)
 - [Software](#software)
   + [Atom packages](#atom-packages)
 - [Web](#web)
